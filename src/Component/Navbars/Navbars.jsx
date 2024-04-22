@@ -23,88 +23,240 @@ function NavbarNav() {
                 About Us
               </NavLink>
 
-              {/* demo  */}
+              {/* submenu bar services area start */}
 
-<nav className="menu_bar nav_text">
-  <ul>
-    <li className="menu_item">
-      <span className="services">
-        Services <IoIosArrowDown />
-      </span>
-      <div className="dropdown_menu">
-        <ul className="submenu">
-          <li>
-            <span className="services">
-              Package <IoIosArrowForward className="fas" />
-            </span>
-            <div className="dropdown_menu_1">
-              <ul>
-                {Array.from({ length: 5 }, (_, index) => (
-                  <li key={index}>
-                    <NavLink to="/our-team" className="dropdown-item">
-                      PackagePackagePackagePackagePackagePackage
-                    </NavLink>
+              <nav className="menu_bar nav_text">
+                <ul>
+                  <li className="menu_item">
+                    <span className="services">
+                      Services <IoIosArrowDown />
+                    </span>
+                    <div className="dropdown_menu">
+                      <ul className="submenu">
+                        <li>
+                          <span className="services">
+                            Management <IoIosArrowForward className="fas" />
+                          </span>
+                          <div className="dropdown_submenu">
+                            <ul>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Community Management
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Social media handles management
+                                </NavLink>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li>
+                          <span className="services">
+                            Marketing <IoIosArrowForward className="fas" />
+                          </span>
+                          <div className="dropdown_submenu">
+                            <ul>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  SEO Marketing
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Content Marketing
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Influencer Marketing
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Social Media Marketing
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Campaign Marketing
+                                </NavLink>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <span className="services">
+                            Development <IoIosArrowForward className="fas" />
+                          </span>
+                          <div className="dropdown_submenu">
+                            <ul>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Crypto Token Development
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Website Development
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  App Development
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  White Paper Development
+                                </NavLink>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <span className="services">
+                            Design <IoIosArrowForward className="fas" />
+                          </span>
+                          <div className="dropdown_submenu">
+                            <ul>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Logo Design
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Stationery Design
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Social Media Design
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  Ecommerce Photo Editing
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/our-team"
+                                  className="dropdown-item"
+                                >
+                                  White Paper Design
+                                </NavLink>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li>
+                          <NavLink to="/listing" className="dropdown-item">
+                            Listing
+                          </NavLink>
+                        </li>
+
+                        <li>
+                          <NavLink to="/listing" className="dropdown-item">
+                            Package
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
-                ))}
-              </ul>
-            </div>
-          </li>
+                </ul>
+              </nav>
 
-          <li>
-            <span className="services">
-            Management <IoIosArrowForward className="fas" />
-            </span>
-            <div className="dropdown_menu_1">
-              <ul>
-                {Array.from({ length: 5 }, (_, index) => (
-                  <li key={index}>
-                    <NavLink to="/our-team" className="dropdown-item">
-                    ManagementManagementManagementManagementManagement
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </li>
-          <li>
-            <NavLink to="/management" className="dropdown-item">
-              Management
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/marketing" className="dropdown-item">
-              Marketing
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/development" className="dropdown-item">
-              Development
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/design" className="dropdown-item">
-              Design
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/listing" className="dropdown-item">
-              Listing
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-    </li>
-  </ul>
-</nav>
-
-              
+              {/* submenu bar services area end */}
 
               <NavLink to="/gallery" className="nav_text">
                 Clients
               </NavLink>
-              <NavLink to="/blog" className="nav_text">
-                Company
-              </NavLink>
+
+              {/* submenu bar Company area start */}
+
+              <nav className="menu_bar nav_text">
+                <ul>
+                  <li className="menu_item">
+                    <span className="services">
+                      Company <IoIosArrowDown />
+                    </span>
+                    <div className="dropdown_menu comapny_dropdown_menu">
+                      <ul className="submenu">
+                        <li>
+                          <NavLink to="/listing" className="dropdown-item">
+                            About
+                          </NavLink>
+                        </li>
+
+                        <li>
+                          <NavLink to="/listing" className="dropdown-item">
+                            Team
+                          </NavLink>
+                        </li>
+
+                        <li>
+                          <NavLink to="/listing" className="dropdown-item">
+                            Careers
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+
+              {/* submenu bar Company area end */}
+
               <NavLink to="/contact" className="nav_text">
                 Blog
               </NavLink>
