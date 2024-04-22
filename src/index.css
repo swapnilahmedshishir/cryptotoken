@@ -13,6 +13,8 @@
 }
 /* color 
 background: linear-gradient(225deg, #18C8FF 14.89%, rgba(198, 8, 255, 0.79) 85.85%);
+background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
+
 */
 
 :root {
@@ -58,8 +60,8 @@ background: linear-gradient(225deg, #18C8FF 14.89%, rgba(198, 8, 255, 0.79) 85.8
 .dropdown_menu_text {
   margin-top: 9px;
 }
-.navbar-toggler {  
-  background-color:#18c8ff
+.navbar-toggler {
+  background-color: #18c8ff;
 }
 
 /* submenu bar style  */
@@ -87,7 +89,7 @@ background: linear-gradient(225deg, #18C8FF 14.89%, rgba(198, 8, 255, 0.79) 85.8
   display: block;
   position: absolute;
   left: -15px;
-  top: 110%;  
+  top: 110%;
   padding: 1.6rem;
 }
 
@@ -97,7 +99,7 @@ background: linear-gradient(225deg, #18C8FF 14.89%, rgba(198, 8, 255, 0.79) 85.8
 }
 
 .menu_bar ul li:hover .dropdown_menu ul li {
-  width: 150px; 
+  width: 150px;
   padding: 1rem 0rem;
   border-bottom: 1px solid #ffffff80;
   font-family: var(--font-main);
@@ -144,8 +146,8 @@ background: linear-gradient(225deg, #18C8FF 14.89%, rgba(198, 8, 255, 0.79) 85.8
   padding: 0.8rem 0rem;
 }
 /* comapny dropdown maneu style */
-.menu_bar ul li:hover .comapny_dropdown_menu ul li {  
-  width: 95px;  
+.menu_bar ul li:hover .comapny_dropdown_menu ul li {
+  width: 95px;
 }
 
 .contactBtn {
@@ -162,6 +164,46 @@ background: linear-gradient(225deg, #18C8FF 14.89%, rgba(198, 8, 255, 0.79) 85.8
   color: var(--text-color);
 }
 /* ========================================================================= */
+/* Erro Page  */
+.erro_page_div {
+  height: 89vh;
+  background-color: #020238;
+}
+.erro_text_div {
+  font-family: var(--font-main);
+}
+.erro-text-fof {
+  font-size: 17rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+.erro_text_div h5 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-top: -4rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.custombtn {
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
+  padding: 0.8rem 2.8rem;
+  border-radius: 1rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+.custombtn:hover {
+  background: linear-gradient(
+    225deg,
+    #35c8f5 14.89%,
+    rgba(218, 130, 245, 0.79) 85.85%
+  );
+}
+/* ========================================================================= */
 /* media query  */
 /* =========================================== */
 /* Mobile-First Media Queries */
@@ -169,7 +211,6 @@ background: linear-gradient(225deg, #18C8FF 14.89%, rgba(198, 8, 255, 0.79) 85.8
   /* ...
 	// rules here apply to devices from from 768px to 991px (inclusive)
 	... */
-
 }
 @media (min-width: 992px) {
   /* ...
@@ -193,25 +234,23 @@ background: linear-gradient(225deg, #18C8FF 14.89%, rgba(198, 8, 255, 0.79) 85.8
 	... */
 }
 
-
 /* =========================================== */
 /* Desktop-First Media Queries */
 @media (max-width: 1200px) {
-	/* ...
+  /* ...
 	// rules here apply to devices from 993px to 1200px (inclusive)
 	... */
 }
-@media (max-width: 992px) {	
-	/* ...
+@media (max-width: 992px) {
+  /* ...
 	// rules here apply to devices from 769px to 992px (inclusive)
 	... */
-  .nav_text {    
+  .nav_text {
     margin: 1rem 0rem;
   }
 }
 @media (max-width: 768px) {
-	/* ...
+  /* ...
 	// rules here apply to devices from 0px to 768px (inclusive)
-	... */  
-
+	... */
 }
