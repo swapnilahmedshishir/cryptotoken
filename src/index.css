@@ -45,7 +45,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   }
 
   50% {
-      transform: translateY(1.5rem);
+      transform: translateY(0.5rem);
   }
 
   100% {
@@ -70,6 +70,33 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   100% {
       transform: translateX(0);
   }
+}
+
+/* universal colum text design */
+.col_text_style strong{
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  font-family: var(--font-main);
+}
+
+.col_text_style strong span{
+  color: var(--text-second-color);
+}
+
+.col_text_style p{
+font-family: Open Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: justify;
+color: var(--text-color);
+padding: 2rem 0rem;
+}
+
+.col_image_style img{
+  width: 100%;
+  margin-left: -1rem;  
 }
 
 /* Navbar nav style  */
@@ -252,8 +279,9 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /* Hero */
 .hero_div{  
   background: linear-gradient(141.34deg, #8429F8 5.69%, #060044 70.54%);  
-  height: 39.75rem;
-  color:var(--text-color)
+  height: 45rem;
+  color:var(--text-color);
+  position: relative;
 }
 .hero_row_style{
   padding-top: 3.7rem;
@@ -261,14 +289,15 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .hero_col_text_style{
   padding-top: 3.3rem;
 }
+
 .hero_col_text_style strong{
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
   line-height: 3.5rem;
   font-family: var(--font-main);
 }
 .hero_col_text_style p{
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: #f3f0f0;
@@ -280,10 +309,133 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   width: 100%;
   margin-left: -1.5rem;  
 }
+.ai_service {
+  background: #FFFFFFCC;
+  height: 7rem;
+  width: 80%; /* Adjust width as needed */
+  max-width: 1000px; /* Example maximum width */
+  margin: 0 auto; /* Center horizontally */
+  z-index: 1000;
+  position: absolute;
+  top: 45rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius:12px; 
+  box-shadow: 0rem -0.2rem 10rem 0.5rem rgba(10, 195, 253, 0.938596);
+}
+
+/* About design */
+.about_div{  
+  background: var(--bg-color);  
+  height: 36.75rem;
+  color:var(--text-color)
+}
+.about_row_style{
+  padding-top: 12rem;
+}
+.about_col_text_style{
+  padding-top: 1.5rem;  
+}
+.about_col_text_style strong{
+  text-transform: uppercase;
+}
+.border_style{
+  margin-top: 1rem;
+  width: 170px;
+border-bottom: 3px solid var(--text-color);
+}
 
 
 /* ========================================================================= */
 /* media query  */
+/* =========================================== */
+/* Desktop-First Media Queries */
+@media (max-width: 1200px) {
+  /* ...
+	// rules here apply to devices from 993px to 1200px (inclusive)
+	... */
+  .hero_col_text_style strong{
+    font-size: 2rem;    
+    line-height: 3rem;
+  }
+  .hero_col_text_style p{
+    padding: 1.5rem 3rem 1rem 0rem;
+  }
+  .hero_col_image_style img{   
+    margin-left: 0rem;
+    height: 27rem;
+  }  
+
+  /* universal design */
+.col_text_style strong{
+  font-size: 1.7rem; 
+  line-height: 3rem;
+}
+
+.col_image_style img{  
+  height: 27rem;  
+}
+.border_style{  
+  width: 120px;
+}
+}
+@media (max-width: 992px) {
+  /* ...
+	// rules here apply to devices from 769px to 992px (inclusive)
+	... */
+  .nav_text {
+    margin: 1rem 0rem;
+  }
+  .hero_row_style{
+    padding-top: 1rem;
+  }
+  .hero_col_text_style strong{
+    font-size: 1.5rem;    
+    line-height: 2rem;
+  }
+  .hero_col_text_style p{
+    padding: 1rem 1rem 1rem 0rem;
+  }
+  .hero_col_image_style img{   
+    margin-left: 0rem;
+    height: 25rem;
+  }
+  /* about  */
+  .about_div{      
+    height: 34.75rem;
+  }
+}
+@media (max-width: 768px) {
+  /* ...
+	// rules here apply to devices from 0px to 768px (inclusive)
+	... */
+  .erro-text-fof {
+    font-size: 10rem; 
+  }
+  .erro_text_div h5 {    
+    margin-top: 0rem;
+  }
+  .hero_div{  
+    min-height: 54rem;
+  }
+  .hero_col_image_style img{
+    height: 25rem;
+    padding-top: 2rem;
+  }
+  /* about  */
+  .about_div{      
+    height: 64rem;
+  }
+  .col_text_style{
+    margin-top: 3rem;
+  }
+  .border_style{  
+    width: 95px;
+  }
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* =========================================== */
 /* Mobile-First Media Queries */
 @media (min-width: 768px) {
@@ -314,61 +466,3 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   }
 }
 
-/* =========================================== */
-/* Desktop-First Media Queries */
-@media (max-width: 1200px) {
-  /* ...
-	// rules here apply to devices from 993px to 1200px (inclusive)
-	... */
-  .hero_col_text_style strong{
-    font-size: 2rem;    
-    line-height: 3rem;
-  }
-  .hero_col_text_style p{
-    padding: 1.5rem 3rem 1rem 0rem;
-  }
-  .hero_col_image_style img{   
-    margin-left: 0rem;
-    height: 27rem;
-  }
-}
-@media (max-width: 992px) {
-  /* ...
-	// rules here apply to devices from 769px to 992px (inclusive)
-	... */
-  .nav_text {
-    margin: 1rem 0rem;
-  }
-  .hero_row_style{
-    padding-top: 1rem;
-  }
-  .hero_col_text_style strong{
-    font-size: 1.5rem;    
-    line-height: 2rem;
-  }
-  .hero_col_text_style p{
-    padding: 1rem 1rem 1rem 0rem;
-  }
-  .hero_col_image_style img{   
-    margin-left: 0rem;
-    height: 25rem;
-  }
-}
-@media (max-width: 768px) {
-  /* ...
-	// rules here apply to devices from 0px to 768px (inclusive)
-	... */
-  .erro-text-fof {
-    font-size: 10rem; 
-  }
-  .erro_text_div h5 {    
-    margin-top: 0rem;
-  }
-  .hero_div{  
-    min-height: 54rem;
-  }
-  .hero_col_image_style img{
-    height: 25rem;
-    padding-top: 2rem;
-  }
-}
