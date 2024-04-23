@@ -27,7 +27,49 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 
 .div_one_background {
+  position: sticky;
+  top: 0;
+  left: 0;  
+  z-index: 100;
   background: var(--bg-color);
+}
+
+.animationY_style{
+  width: 100%;
+  animation: floatImageY 4s ease-in-out infinite;
+}
+
+@keyframes floatImageY {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(1.5rem);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.animationX_style{
+  width: 100%;
+  animation: floatImageX 4s ease-in-out infinite;
+}
+
+@keyframes floatImageX {
+  0% {
+      transform: translateX(0);
+  }
+
+  50% {
+      transform: translateX(1.5rem);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
 }
 
 /* Navbar nav style  */
@@ -91,6 +133,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   left: -15px;
   top: 110%;
   padding: 1.6rem;
+  z-index: 1;
 }
 
 .menu_bar ul li:hover .dropdown_menu ul {
@@ -133,6 +176,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   left: 9.5rem;
   background-color: var(--bg-color);
   padding: 0rem 2.5rem 2rem;
+  z-index: 1;
 }
 
 .dropdown_menu ul li:hover .dropdown_submenu ul li {
@@ -204,6 +248,41 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   );
 }
 /* ========================================================================= */
+/* Home Page Design  */
+/* Hero */
+.hero_div{  
+  background: linear-gradient(141.34deg, #8429F8 5.69%, #060044 70.54%);  
+  height: 39.75rem;
+  color:var(--text-color)
+}
+.hero_row_style{
+  padding-top: 3.7rem;
+}
+.hero_col_text_style{
+  padding-top: 3.3rem;
+}
+.hero_col_text_style strong{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  font-family: var(--font-main);
+}
+.hero_col_text_style p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #f3f0f0;
+  padding: 2rem 5rem 1.4rem 0rem;
+  text-align: left;  
+  font-family: var(--font-main);
+}
+.hero_col_image_style img{
+  width: 100%;
+  margin-left: -1.5rem;  
+}
+
+
+/* ========================================================================= */
 /* media query  */
 /* =========================================== */
 /* Mobile-First Media Queries */
@@ -217,21 +296,22 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 	// rules here apply to devices from 992px to 1199px (inclusive)
 	... */
   .navbar-nav {
-    margin-left: 18rem;
-    margin-bottom: 0rem;
-    margin-right: 3rem;
-  }
-
-  .nav_text {
-    margin-right: 0.8rem;
-    padding-right: 10px;
-    /* margin: 1rem 0rem; */
+    margin-left: 12rem;
   }
 }
 @media (min-width: 1200px) {
   /* ...
 	// rules here apply to devices 1200px and greater
 	... */
+  .navbar-nav {
+    margin-left: 18rem;
+    margin-bottom: 0rem;
+    margin-right: 3rem;
+  }
+  .nav_text {
+    margin-right: 0.8rem;
+    padding-right: 10px;    
+  }
 }
 
 /* =========================================== */
@@ -240,6 +320,17 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   /* ...
 	// rules here apply to devices from 993px to 1200px (inclusive)
 	... */
+  .hero_col_text_style strong{
+    font-size: 2rem;    
+    line-height: 3rem;
+  }
+  .hero_col_text_style p{
+    padding: 1.5rem 3rem 1rem 0rem;
+  }
+  .hero_col_image_style img{   
+    margin-left: 0rem;
+    height: 27rem;
+  }
 }
 @media (max-width: 992px) {
   /* ...
@@ -248,9 +339,36 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   .nav_text {
     margin: 1rem 0rem;
   }
+  .hero_row_style{
+    padding-top: 1rem;
+  }
+  .hero_col_text_style strong{
+    font-size: 1.5rem;    
+    line-height: 2rem;
+  }
+  .hero_col_text_style p{
+    padding: 1rem 1rem 1rem 0rem;
+  }
+  .hero_col_image_style img{   
+    margin-left: 0rem;
+    height: 25rem;
+  }
 }
 @media (max-width: 768px) {
   /* ...
 	// rules here apply to devices from 0px to 768px (inclusive)
 	... */
+  .erro-text-fof {
+    font-size: 10rem; 
+  }
+  .erro_text_div h5 {    
+    margin-top: 0rem;
+  }
+  .hero_div{  
+    min-height: 54rem;
+  }
+  .hero_col_image_style img{
+    height: 25rem;
+    padding-top: 2rem;
+  }
 }
