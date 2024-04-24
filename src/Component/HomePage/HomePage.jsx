@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
+    {/* ============================================================================
+                  Heoro  section 
+=========================================================================== */}
       <div className="hero_div">
         <div className="container">
           <div className="row hero_row_style">
@@ -24,47 +27,50 @@ const HomePage = () => {
             </div>
             <div className="col-sm-12 col-md-6 hero_col_image_style ">
               <img
-                src="Images/Hero-01.png"
+                src="Images/banner/Hero-01.png"
                 alt=""
                 className="animationY_style"
               />
             </div>
           </div>
+{/* ================================================================================
+                  ai service section 
+=========================================================================== */}
 
           <div className="ai_service">   
           <div className="container">
-          <div className="row">            
-            <div className="col-sm-12 col-md-2">
+          <div className="row AiService_row_image_style">            
+            <div className="col-6 col-md-2 AiService_col_image_style">
               <img
-                src="Images/Databricks.png"
+                src="Images/logos/Databricks.png"
                 alt="Databricks"
                 className="animationY_style"
               />
             </div>
-            <div className="col-sm-12 col-md-2 hero_col_image_style ">
+            <div className="col-6 col-md-2 AiService_col_image_style">
               <img
-                src="Images/DATAOCEAN AI.png"
+                src="Images/logos/DATAOCEAN AI.png"
                 alt="DATAOCEAN"
                 className="animationY_style"
               />
             </div>
-            <div className="col-sm-12 col-md-2 hero_col_image_style ">
+            <div className="col-6 col-md-2 AiService_col_image_style">
               <img
-                src="Images/Surge-AI.png"
+                src="Images/logos/Surge-AI.png"
                 alt="Surge-AI"
                 className="animationY_style"
               />
             </div>
-            <div className="col-sm-12 col-md-2 hero_col_image_style ">
+            <div className="col-6 col-md-2 AiService_col_image_style">
               <img
-                src="Images/Defined.ai.png"
+                src="Images/logos/Defined.ai.png"
                 alt="Defined AI"
                 className="animationY_style"
               />
             </div>
-            <div className="col-sm-12 col-md-2 hero_col_image_style ">
+            <div className="col-6 col-md-2 AiService_col_image_style ">
               <img
-                src="Images/Hugging-Face.png"
+                src="Images/logos/Hugging-Face.png"
                 alt=""
                 className="animationY_style"
               />
@@ -75,13 +81,15 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
+{/* ================================================================================
+                  about section 
+=========================================================================== */}
       <div className="about_div">
         <div className="container">
           <div className="row about_row_style">
           <div className="col-sm-12 col-md-6 about_col_image_style col_image_style ">
               <img
-                src="public/Images/banner_img4.png"
+                src="Images/banner/banner_img4.png"
                 alt="banner_img4.png"
                 className="animationX_style"
               />
@@ -99,6 +107,26 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+{/* ================================================================================
+                  Key Features section 
+=========================================================================== */}
+    <div className="common-div-style">
+        <div className='container'>
+         <div className="col_text_style header-one-style">
+              <strong >
+              <span>Key Features</span> 
+              </strong>                        
+          </div> 
+
+          <div className="row about_row_style"> 
+            <div className="col-sm-12 col-md-6 about_col_text_style col_text_style">
+              <div></div> 
+            </div>           
+          </div>
+
+        </div>
+      </div>
+
     </>
   );
 };
