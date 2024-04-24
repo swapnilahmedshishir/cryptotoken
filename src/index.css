@@ -470,6 +470,57 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /*  Team Meta section  */
 .div {
 }
+.team_col_text_style{
+  background: #F5F5F5CC;
+margin: 0rem 0.5rem;
+text-align: center;
+border-radius:1.3rem;
+padding: 2.5rem  3.2rem;
+}
+.team_col_image_circle_style img{
+  width: 6.406rem;
+height: 6.688rem;
+border-radius: 50%;
+
+}
+.team_text_style{
+  font-family: var(--font-main);  
+color: #000000E5;
+font-weight: 700;
+line-height: 27px;
+}
+.team_text_style strong{ 
+font-size: 24px;
+line-height: 3rem;
+}
+.team_text_style h5{ 
+  font-size: 20px;
+  font-weight: 700;
+}
+.team_text_style p{
+  font-size: 18px;
+  font-weight: 400;
+}
+.social_media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: .5s ease;
+}
+
+.social_media a:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
 
 /* ========================================================================= */
 /* media query  */

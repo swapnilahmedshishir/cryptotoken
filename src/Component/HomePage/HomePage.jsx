@@ -332,6 +332,84 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      {/* ================================================================================
+                  Our service section 
+=========================================================================== */}
+      <div className="common-div-style Our_service_div ">
+        <div className="container">
+          <div className="col_text_style header-one-style">
+            <strong>Meet the team</strong>
+          </div>
+
+          <div className="row">
+            <div className="col-sm-12 col-md-6 col-lg-4  team_col_style">              
+              <div className="team_col_text_style">   
+              <div className="team_col_image_circle_style">
+                  <img
+                    src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+                    alt="keyVector1"
+                  />
+                </div>             
+                <div className="team_text_style">
+                <strong>John Williams</strong>
+                <h5>CTO</h5>
+                <p>
+                Passion for Defi. Has worked @coinbase & @google as an advisor
+                </p>
+                </div>
+                <div className="social_media">
+                <a href="https://www.linkedin.com/in/swapnilahmedshishir/" target="_blank"><i className='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/shishir_swapnil" target="_blank"><i className='bx bxl-twitter'></i></a>
+                <a href="https://github.com/swapnilahmedshishir" target="_blank"><i className='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/swapnilahmedshishir/" target="_blank"><i className='bx bxl-facebook'></i></a>                
+                <a href="https://www.instagram.com/shishirswapnil/" target="_blank"><i className='bx bxl-instagram'></i></a> 
+            </div>           
+              </div>
+            </div>
+
+
+            <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
+              <div className="services_col_image_style">
+                <div className="services_col_image_circle_style">
+                  <img
+                    src="Images/icons/servicesVector2.png"
+                    alt="keyVector1"
+                  />
+                </div>
+              </div>
+              <div className="services_col_text_style">
+                <strong>Marketing</strong>
+                <div></div>
+                <p>
+                  We craft data-driven marketing strategies to get your brand in
+                  front of the customers who matter most.
+                </p>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
+              <div className="services_col_image_style">
+                <div className="services_col_image_circle_style">
+                  <img
+                    src="Images/icons/servicesVector3.png"
+                    alt="keyVector1"
+                  />
+                </div>
+              </div>
+              <div className="services_col_text_style">
+                <strong>Development</strong>
+                <div></div>
+                <p>
+                  Build what you need. Our development team brings your ideas to
+                  life with innovative and scalable solutions.
+                </p>
+              </div>
+            </div>
+            
+            
+           
+          </div>
+        </div>
+      </div>
     </>
   );
 };
