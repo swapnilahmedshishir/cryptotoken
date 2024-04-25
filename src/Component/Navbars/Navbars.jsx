@@ -2,8 +2,26 @@ import { Container, Navbar } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import Typed from 'typed.js';
+import { useEffect } from "react";
 
 function NavbarNav() {
+  useEffect(() => {
+    // Initialize Typed.js
+    const typed = new Typed('.multiple_text', {
+      strings: [' Book Intro Call'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+    });
+
+    // Cleanup function to destroy Typed.js instance when component unmounts
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div className="div_one_background">
       <Navbar collapseOnSelect expand="lg" className="navbar_style">
@@ -29,7 +47,7 @@ function NavbarNav() {
                 <ul>
                   <li className="menu_item">
                     <span className="services">
-                      Services <IoIosArrowDown />
+                      Services <IoIosArrowDown className="icon_bar"/>
                     </span>
                     <div className="dropdown_menu">
                       <ul className="submenu">
@@ -228,7 +246,7 @@ function NavbarNav() {
                 <ul>
                   <li className="menu_item">
                     <span className="services">
-                      Company <IoIosArrowDown />
+                      Company <IoIosArrowDown  className="icon_bar"/>
                     </span>
                     <div className="dropdown_menu comapny_dropdown_menu">
                       <ul className="submenu">
@@ -264,9 +282,11 @@ function NavbarNav() {
               <NavLink to="/contact"></NavLink>
             </Nav>
             <div>
-              <button type="button" className="contactBtn">
-                Contact Us
+            <NavLink to="/contact">
+            <button type="button" className="contactBtn">             
+              <span className="multiple_text"></span>
               </button>
+            </NavLink>              
             </div>
           </Navbar.Collapse>
         </Container>
