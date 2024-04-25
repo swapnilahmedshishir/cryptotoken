@@ -164,9 +164,6 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   margin-bottom: 0rem;
   padding-left: 0rem;
 }
-i{
-  /* f */
-}
 .menu_bar ul li {
   /* padding: 0px 8px; */
   position: relative;
@@ -308,7 +305,7 @@ i{
 /* ========================================================================= */
 /* Home Page Design  */
 /* Hero */
-.fiv{
+.hero{
 
 
 }
@@ -320,10 +317,11 @@ i{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -2rem;
 }
 .hero_row_style {
   padding-bottom: 5.22875rem;
-  padding-top: 3.5rem;
+  padding-top: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -364,7 +362,41 @@ i{
   text-align: center;  
 }
 .hero_btn1{
-  margin-right: 3.5rem;
+  margin-right: 2.5rem;
+}
+.getStartedBtn {
+  background:none;
+  padding: 0.5rem 1.4rem;
+  border-radius: 0.4rem;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.getStartedBtn_span{
+  font-size: 1.2rem;
+  margin-left: 0.7rem;
+  background: linear-gradient(
+    175deg,
+    #34c9f7 14.89%,
+    rgba(193, 21, 245, 0.79) 85.85%
+  );
+  padding: 0.2rem 0.4rem;
+  border-radius:50%;
+  
+}
+.getStartedBtn:hover .getStartedBtn_span{
+  transition: all 0.4s linear;
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
+}
+.getStartedBtn:hover .getStartedBtn_span .ion-icon{
+  transition: all 0.4s linear;
+  transform: scale(1.2);
+  color: var(--main-color);
 }
 /* Ai Service image style */
 .ai_service {
@@ -466,8 +498,9 @@ i{
   padding-bottom: 0rem !important;
 }
 
-.services_col_text_style {
+.services_col_text_style { 
   background: #7853ff59;
+  height: 19rem;
   text-align: center;
   padding: 3rem 1.5rem;
   margin: 0px 2rem;
@@ -579,25 +612,26 @@ line-height: 3rem;
 @media (max-width: 1200px) {
   /* ...
 	// rules here apply to devices from 993px to 1200px (inclusive)
-	... */
-  .hero_col_text_style strong {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-  .hero_col_text_style p {
-    padding: 1.5rem 3rem 1rem 0rem;
-  }
-  .hero_col_image_style img {
-    margin-left: 0rem;
-    height: 27rem;
+	... */    
+  .hero_text_style p {   
+     padding: 0rem 7.5rem;
+  } 
+  .ai_service {   
+    top: 39.2rem;
   }
 
   /* universal design */
   .col_image_style img {
-    height: 27rem;
+    height: 30rem;
   }
   .border_style {
     width: 120px;
+  }
+  /* services  */
+  .services_col_text_style {     
+    height: 22rem;   
+    padding: 3rem 1rem;
+    margin: 0px 1.5rem;
   }
 }
 @media (max-width: 992px) {
@@ -607,36 +641,20 @@ line-height: 3rem;
   .nav_text {
     margin: 1rem 0rem;
   }
-  .hero_div {
-    height: 38rem;
-  }
-  .hero_row_style {
-    padding-top: 1rem;
-    text-align: center;
-    margin: 2rem 0rem ;
-  }
-  .hero_col_text_style strong {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
+  .hero_text_style h1 {
+    font-size: 3rem;
+    padding: 0rem 0.2rem;
+   
+  }  
   .hero_col_text_style p {
     padding: 1rem 1rem 1rem 0rem;
   }
-  .hero_col_image_style img {
-    margin-left: 0rem;
-    height: 25rem;
-  }
+
   /* Ai Service image style */
   .ai_service {
-    position: absolute;
-    top: 38rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 46rem;
   }
-  /* about  */
-  .about_div {
-    /* height: 39.75rem; */
-  }
+ 
 }
 @media (max-width: 768px) {
   /* ...
@@ -648,17 +666,22 @@ line-height: 3rem;
   .erro_text_div h5 {
     margin-top: 0rem;
   }
-  .hero_div {
-    min-height: 60rem;
+  /* hero */
+  .hero_row_style {
+    padding-bottom: 7.22875rem;
   }
-  .hero_col_image_style img {
-    height: 25rem;
-    padding-top: 2rem;
+  .hero_text_style h1 {
+    font-size: 2.5rem;
+    padding: 0rem;   
+    line-height: 3.2rem;
+  } 
+  .hero_btn_style .hero_btn1{
+    margin-right: 0rem;
   }
-  /* about  */
-  .about_div {
-    /* height: 64rem; */
+  .hero_btn_style .custombtn{
+    margin-bottom: 1.5rem;
   }
+
   .col_text_style {
     margin-top: 3rem;
   }
@@ -668,18 +691,21 @@ line-height: 3rem;
 
   /* Ai Service image style */
   .ai_service {
-    height: 11rem;
-    width: 80%; /* Adjust width as needed */
-    max-width: 480px; /* Example maximum width */
+    height: 12.5rem;
+    max-width: 480px; 
+    /* width: 90%;  */
     position: absolute;
-    top: 60rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50.5rem;
+    padding: 0.5rem 0.7rem;
   }
   .AiService_col_image_style img {
     width: 100%;
-    height: 2rem;
-    margin-bottom: 1rem;
+    height: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  /* about */
+  .about_div {   
+    padding: 9rem 0rem;
   }
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

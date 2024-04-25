@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Typed from 'typed.js';
 import { useEffect } from "react";
+import { FaArrowRight } from "react-icons/fa6";
 
 const HomePage = () => {
   useEffect(() => {
@@ -25,7 +26,6 @@ const HomePage = () => {
 =========================================================================== */}
       <div className="hero_div">
         <div className="container hero_row_style">
-          {/* <div className="row "> */}
             <div className="hero_col_text_style">
              <div className="hero_text_style">
              <h1>
@@ -45,8 +45,9 @@ const HomePage = () => {
              <Link to="/" className="hero_btn1">
                 <button className="custombtn">Request A Free Call</button>
               </Link>
-             <Link to="/">
-                <button className="custombtn">Get started</button>
+             <Link to="/" className="hero_btn2">
+                <button className="getStartedBtn">Get started 
+                <span className="getStartedBtn_span"><FaArrowRight className="ion-icon"/></span></button>
               </Link>
              </div>
             </div>            
@@ -59,7 +60,7 @@ const HomePage = () => {
           <div className="ai_service">
             <div className="container">
               <div className="row AiService_row_image_style">
-              <div className="col-6 col-md-2 AiService_col_image_style">
+              <div className="col-6  col-md-2 AiService_col_image_style">
                   <img
                     src="Images/logos/Defined.ai.png"
                     alt="Defined AI"
@@ -77,8 +78,6 @@ const HomePage = () => {
                     alt="Hugging-Face"
                   />
                 </div>
-                
-                
                 <div className="col-6 col-md-2 AiService_col_image_style">
                   <img
                     src="Images/logos/Databricks.png"
@@ -91,7 +90,6 @@ const HomePage = () => {
                     alt="Surge-AI"
                   />
                 </div>
-                
               </div>
             </div>
           </div>
@@ -336,6 +334,7 @@ const HomePage = () => {
                   />
                 </div>
               </div>
+                           
               <div className="services_col_text_style">
                 <strong>Package</strong>
                 <div></div>
@@ -345,12 +344,13 @@ const HomePage = () => {
                   business goals.
                 </p>
               </div>
+              
             </div>
           </div>
         </div>
       </div>
       {/* ================================================================================
-                  Our service section 
+                  Meet the team section 
 =========================================================================== */}
       <div className="common-div-style Our_service_div ">
         <div className="container">
