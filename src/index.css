@@ -44,42 +44,21 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   background: var(--bg-color);
 }
 
-.animationY_style {
+/* animation image  */
+.animation-image {
+  position: relative;
+  overflow: hidden; /* Ensure image stays within its container */
+}
+
+.animation-image img {
+  display: block;
   width: 100%;
-  animation: floatImageY 4s ease-in-out infinite;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth transition for animation */
 }
 
-@keyframes floatImageY {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(0.5rem);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.animationX_style {
-  width: 100%;
-  animation: floatImageX 4s ease-in-out infinite;
-}
-
-@keyframes floatImageX {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(1.5rem);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
+.mouse-move-animation {
+  transition: transform 0.3s ease; /* Smooth transition for animation */
 }
 
 /* universal colum text design */
@@ -305,10 +284,6 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /* ========================================================================= */
 /* Home Page Design  */
 /* Hero */
-.hero{
-
-
-}
 .hero_div {  
   background:url(/Images/banner/pattern2.png), linear-gradient(238.34deg, #8429f8 1.69%, #060044 20.54%);  
   color: var(--text-color);
@@ -411,6 +386,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
+  z-index: 2;
   /* box-shadow: 0rem -0.2rem 10rem 0.5rem rgba(7, 97, 124, 0.939); */
 }
 .AiService_row_image_style {  
@@ -449,6 +425,12 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   width: 170px;
   border-bottom: 3px solid var(--text-color);
 }
+.about_col_image_style img{
+  height: 22rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
 /* Key Features */
 .key_col_text_style {
   text-align: center;
@@ -491,23 +473,29 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   margin-top: 6rem;
   position: relative;
 }
+
 .services_col_style:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 .OUR-SERVICES-TEXT {
   padding-bottom: 0rem !important;
 }
 
-.services_col_text_style { 
+.services_col_text_style {
   background: #7853ff59;
-  height: 19rem;
   text-align: center;
   padding: 3rem 1.5rem;
   margin: 0px 2rem;
-  border-radius: 0.6rem;
+  border-radius: 0.9rem;
   font-family: Open Sans;
   box-shadow: #ffffff59 0px 2px 5px, var(--text-color) 0px 2px 5px -3px;
+  flex: 1; 
+  transition:.5s ease;
 }
+.services_col_style:hover .services_col_text_style {
+  border-radius: 4rem 0rem;
+}
+
 .services_col_text_style strong {
   font-size: 1.5rem;
   font-weight: 700;
@@ -525,13 +513,12 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   font-weight: 400;
   line-height: 27px;
 }
+.services_col_image_style {
+  position: relative;
+}
 
 .services_col_image_style .services_col_image_circle_style {
-  background: linear-gradient(
-    225deg,
-    #18c8ff 14.89%,
-    rgba(198, 8, 255, 0.79) 85.85%
-  );
+  background: linear-gradient(225deg, #18c8ff 14.89%, rgba(198, 8, 255, 0.79) 85.85%);
   background-repeat: no-repeat;
   width: 4rem;
   height: 4rem;
@@ -550,19 +537,52 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   width: 2.1rem;
 }
 
-/*  Team Meta section  */
-.div {
+
+.services_col_div_style{
+  display: flex;
+  flex-direction: column; 
+  height: 100%; 
 }
+
+
+
+/*  Team Meta section  */
+.team_row_style {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team_col_style {
+  flex: 1;
+  display: flex;
+  /* justify-content: center; */
+  align-items: stretch;
+  flex-direction: column; 
+  justify-content: space-between; 
+  /* align-items: center; */
+  margin: 0 1rem;
+  transition: .5s ease;
+}
+
+.team_col_style:hover {
+  transform: scale(1.01);
+}
+
 .team_col_text_style{
   background: #F5F5F5CC;
-margin: 0rem 0.5rem;
+margin: 0rem 1rem;
 text-align: center;
 border-radius:1.3rem;
-padding: 2.5rem  3.2rem;
+padding: 2rem  2rem;
+transition:.5s ease;
 }
+
+.team_col_style:hover .team_col_text_style {
+  border-radius: 0.2rem 4rem;
+}
+
 .team_col_image_circle_style img{
-  width: 6.406rem;
-height: 6.688rem;
+  width: 6.5rem;
+height: 6.5rem;
 border-radius: 50%;
 
 }
@@ -571,10 +591,12 @@ border-radius: 50%;
 color: #000000E5;
 font-weight: 700;
 line-height: 27px;
+flex: 1; 
 }
 .team_text_style strong{ 
-font-size: 24px;
-line-height: 3rem;
+font-size: 1.5rem;
+line-height: 4rem;
+text-transform: capitalize;
 }
 .team_text_style h5{ 
   font-size: 20px;
@@ -588,21 +610,21 @@ line-height: 3rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background: transparent;
-  border: .2rem solid var(--main-color);
+  width: 2.6rem;
+  height: 2.6rem;
+  background: var(--bg-color);
+  border: .2rem solid var(--bg-color);
   border-radius: 50%;
-  font-size: 2rem;
-  color: var(--main-color);
-  margin: 3rem 1.5rem 3rem 0;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin: 1rem 0.3rem 1.5rem 0;
   transition: .5s ease;
 }
 
 .social_media a:hover {
-  background: var(--main-color);
-  color: var(--second-bg-color);
-  box-shadow: 0 0 1rem var(--main-color);
+  background: var(--text-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 1rem var(--bg-color);
 }
 
 /* ========================================================================= */
@@ -633,6 +655,12 @@ line-height: 3rem;
     padding: 3rem 1rem;
     margin: 0px 1.5rem;
   }
+  /* team */
+  .team_col_text_style{   
+  margin: 0rem 0rem;
+  /* margin-bottom: 2rem; */
+  padding: 1.7rem  1.7rem;
+  }
 }
 @media (max-width: 992px) {
   /* ...
@@ -653,6 +681,13 @@ line-height: 3rem;
   /* Ai Service image style */
   .ai_service {
     top: 46rem;
+  }
+    /* team */
+    .team_col_style{
+      margin: 0rem;
+    }
+  .team_col_text_style{   
+  margin: 0rem 0rem;
   }
  
 }
@@ -707,6 +742,15 @@ line-height: 3rem;
   .about_div {   
     padding: 9rem 0rem;
   }
+    /* team */
+    .team_col_style {
+      margin: 0rem;
+  }
+    .team_col_text_style{   
+      margin: 0rem 0rem;
+      margin-bottom: 2rem;
+      /* padding: 1.7rem  1.7rem; */
+      }
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

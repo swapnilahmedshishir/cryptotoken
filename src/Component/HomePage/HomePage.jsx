@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import Typed from 'typed.js';
 import { useEffect } from "react";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight , FaXTwitter, FaLinkedin} from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+
 
 const HomePage = () => {
   useEffect(() => {
@@ -19,6 +21,36 @@ const HomePage = () => {
       typed.destroy();
     };
   }, []);
+
+  useEffect(() => {
+    const container = document.querySelector('.animation-image');
+    const image = container.querySelector('img');
+    //   mousemove event handler
+    const handleMouseMove = (e) => {
+      const x = (e.clientX - container.offsetLeft) / container.offsetWidth;
+      const y = (e.clientY - container.offsetTop) / container.offsetHeight;
+  
+      const moveX = (x - 0.5) * 30; // Adjust the multiplier for desired movement range
+      const moveY = (y - 0.5) * 30; // Adjust the multiplier for desired movement range
+  
+      image.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    };
+  
+    const handleMouseLeave = () => {
+      image.style.transform = 'none'; // Reset image position when mouse leaves the container
+    };
+  
+    container.addEventListener('mousemove', handleMouseMove);
+    container.addEventListener('mouseleave', handleMouseLeave);
+  
+    // Cleanup function to remove event listeners when component unmounts
+    return () => {
+      container.removeEventListener('mousemove', handleMouseMove);
+      container.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
+  
+
   return (
     <>
       {/* ============================================================================
@@ -98,7 +130,7 @@ const HomePage = () => {
 {/* ================================================================================
                   about section 
 =========================================================================== */}
-      <div className="about_div">
+      <div className="about_div animation-image">
         <div className="container">
           <div className="row about_row_style">
             <div className="col-sm-12 col-md-6 about_col_image_style col_image_style ">
@@ -233,8 +265,9 @@ const HomePage = () => {
             <strong>OUR SERVICES</strong>
           </div>
 
-          <div className="row">
+          <div className="row">  
             <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
+              <div className="services_col_div_style">
               <div className="services_col_image_style">
                 <div className="services_col_image_circle_style">
                   <img
@@ -251,9 +284,11 @@ const HomePage = () => {
                   back-end so you can focus on running your business.
                 </p>
               </div>
+              </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_image_style">
+            <div className="services_col_div_style">
+            <div className="services_col_image_style">
                 <div className="services_col_image_circle_style">
                   <img
                     src="Images/icons/servicesVector2.png"
@@ -266,12 +301,15 @@ const HomePage = () => {
                 <div></div>
                 <p>
                   We craft data-driven marketing strategies to get your brand in
-                  front of the customers who matter most.
+                  front of the customers who matter most.                 
                 </p>
               </div>
+            </div>              
             </div>
+            
             <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_image_style">
+            <div className="services_col_div_style">
+            <div className="services_col_image_style">
                 <div className="services_col_image_circle_style">
                   <img
                     src="Images/icons/servicesVector3.png"
@@ -287,16 +325,20 @@ const HomePage = () => {
                   life with innovative and scalable solutions.
                 </p>
               </div>
+
             </div>
+            </div>
+
             <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_image_style">
+            <div className="services_col_div_style">
+            <div className="services_col_image_style">
                 <div className="services_col_image_circle_style">
-                  <img
+                <img
                     src="Images/icons/servicesVector2.png"
                     alt="keyVector1"
                   />
                 </div>
-              </div>
+              </div>              
               <div className="services_col_text_style">
                 <strong>Design</strong>
                 <div></div>
@@ -305,9 +347,12 @@ const HomePage = () => {
                   elevate your brand and resonate with your audience.
                 </p>
               </div>
+
+            </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_image_style">
+            <div className="services_col_div_style">
+            <div className="services_col_image_style">
                 <div className="services_col_image_circle_style">
                   <img
                     src="Images/icons/servicesVector5.png"
@@ -325,8 +370,11 @@ const HomePage = () => {
                 </p>
               </div>
             </div>
+            </div>
+
             <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_image_style">
+            <div className="services_col_div_style">
+            <div className="services_col_image_style">
                 <div className="services_col_image_circle_style">
                   <img
                     src="Images/icons/servicesVector6.png"
@@ -344,8 +392,10 @@ const HomePage = () => {
                   business goals.
                 </p>
               </div>
-              
+
             </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -358,12 +408,13 @@ const HomePage = () => {
             <strong>Meet the team</strong>
           </div>
 
-          <div className="row">
-            <div className="col-sm-12 col-md-6 col-lg-4  team_col_style">              
-              <div className="team_col_text_style">   
+          <div className="row team_row_style">
+          <div className="col-sm-12 col-md-6 col-lg-4 team_col_style">
+            <div className="services_col_div_style">
+            <div className="team_col_text_style">   
               <div className="team_col_image_circle_style">
                   <img
-                    src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+                    src="/Images/profileImage/unsplash_ILip77SbmOE.png"
                     alt="keyVector1"
                   />
                 </div>             
@@ -375,55 +426,66 @@ const HomePage = () => {
                 </p>
                 </div>
                 <div className="social_media">
-                <a href="https://www.linkedin.com/in/swapnilahmedshishir/" target="_blank"><i className='bx bxl-linkedin'></i></a>
-                <a href="https://twitter.com/shishir_swapnil" target="_blank"><i className='bx bxl-twitter'></i></a>
-                <a href="https://github.com/swapnilahmedshishir" target="_blank"><i className='bx bxl-github'></i></a>
-                <a href="https://www.facebook.com/swapnilahmedshishir/" target="_blank"><i className='bx bxl-facebook'></i></a>                
-                <a href="https://www.instagram.com/shishirswapnil/" target="_blank"><i className='bx bxl-instagram'></i></a> 
+                <a href="https://www.linkedin.com/in/swapnilahmedshishir/" target="_blank"><FaFacebookF  className="bx bxl-twitter"/></a>
+                <a href="https://twitter.com/shishir_swapnil" target="_blank"><FaXTwitter className="bx bxl-twitter"/></a>
+                <a href="https://github.com/swapnilahmedshishir" target="_blank"><FaLinkedin className="bx" /></a>                
             </div>           
               </div>
+
             </div>
-
-
-            <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_image_style">
-                <div className="services_col_image_circle_style">
+            </div> 
+          <div className="col-sm-12 col-md-6 col-lg-4 team_col_style">
+            <div className="services_col_div_style">
+            <div className="team_col_text_style">   
+              <div className="team_col_image_circle_style">
                   <img
-                    src="Images/icons/servicesVector2.png"
+                    src="Images/profileImage/unsplash_IF9TK5Uy-KI.png"
                     alt="keyVector1"
                   />
-                </div>
-              </div>
-              <div className="services_col_text_style">
-                <strong>Marketing</strong>
-                <div></div>
+                </div>             
+                <div className="team_text_style">
+                <strong>Alisha Ruckets</strong>
+                <h5>Advisor</h5>
                 <p>
-                  We craft data-driven marketing strategies to get your brand in
-                  front of the customers who matter most.
+                Has excellent skills in project management. Previously @binance 
                 </p>
+                </div>
+                <div className="social_media">
+                <a href="https://www.linkedin.com/in/swapnilahmedshishir/" target="_blank"><FaFacebookF  className="bx bxl-twitter"/></a>
+                <a href="https://twitter.com/shishir_swapnil" target="_blank"><FaXTwitter className="bx bxl-twitter"/></a>
+                <a href="https://github.com/swapnilahmedshishir" target="_blank"><FaLinkedin className="bx" /></a>                
+            </div>           
               </div>
+
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_image_style">
-                <div className="services_col_image_circle_style">
+            </div> 
+          <div className="col-sm-12 col-md-12 col-lg-4 team_col_style">
+            <div className="services_col_div_style">
+            <div className="team_col_text_style">   
+              <div className="team_col_image_circle_style">
                   <img
-                    src="Images/icons/servicesVector3.png"
+                    src="Images/profileImage/unsplash_bqe0J0b26RQ.png"
                     alt="keyVector1"
                   />
-                </div>
-              </div>
-              <div className="services_col_text_style">
-                <strong>Development</strong>
-                <div></div>
+                </div>             
+                <div className="team_text_style">
+                <strong>Maria Silva</strong>
+                <h5>Full Stack Developer
+</h5>
                 <p>
-                  Build what you need. Our development team brings your ideas to
-                  life with innovative and scalable solutions.
+                Has an experience of 10+ years working in web.3. Previously @crypto.com 
                 </p>
+                </div>
+                <div className="social_media">
+                <a href="https://www.linkedin.com/in/swapnilahmedshishir/" target="_blank"><FaFacebookF  className="bx bxl-twitter"/></a>
+                <a href="https://twitter.com/shishir_swapnil" target="_blank"><FaXTwitter className="bx bxl-twitter"/></a>
+                <a href="https://github.com/swapnilahmedshishir" target="_blank"><FaLinkedin className="bx" /></a>                
+            </div>           
               </div>
+
             </div>
-            
-            
-           
+            </div> 
+
           </div>
         </div>
       </div>
