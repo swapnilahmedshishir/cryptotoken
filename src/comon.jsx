@@ -3,12 +3,10 @@ const comon = () => {
     <div>
       {/* every conatiner  */}
       <div>
-        <div className='container'>
-
-        </div>
+        <div className="container"></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default comon
+export default comon;

@@ -1,20 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Faq = () => {
-    // state
-//   const [errorMessage, setErrorMessage] = useState(null);
-//   const [faq, setFaq] = useState([]);
+  // state
 
   const toggleAccordion = (event) => {
     const items = document.querySelectorAll(".accordion button");
-    const itemToggle = event.currentTarget.getAttribute('aria-expanded');
+    const itemToggle = event.currentTarget.getAttribute("aria-expanded");
 
     for (let i = 0; i < items.length; i++) {
-      items[i].setAttribute('aria-expanded', 'false');
+      items[i].setAttribute("aria-expanded", "false");
     }
 
-    if (itemToggle === 'false') {
-      event.currentTarget.setAttribute('aria-expanded', 'true');
+    if (itemToggle === "false") {
+      event.currentTarget.setAttribute("aria-expanded", "true");
     }
   };
 
@@ -27,7 +25,7 @@ const Faq = () => {
       const y = (e.clientY - container.offsetTop) / container.offsetHeight;
 
       const moveX = (x - 0.3) * 7; // Adjust the multiplier for desired movement range
-      const moveY = (y - 0.3) * 7; 
+      const moveY = (y - 0.3) * 7;
 
       image.style.transform = `translate(${moveX}px, ${moveY}px)`;
     };
@@ -46,14 +44,14 @@ const Faq = () => {
     };
   }, []);
   return (
-    <>     
-     
-{/* demo about start */}
-
+    <>
+      {/* demo about start */}
       <div className="common-div-style faq_row_style">
         <div className="container faq_container_style">
-        <div className="col_text_style header-one-style">
-            <strong><span>FAQ</span></strong>
+          <div className="col_text_style header-one-style">
+            <strong>
+              <span>FAQ</span>
+            </strong>
           </div>
           <div className="row">
             <div className="col-sm-12 col-md-6 faq_col_image_style">
@@ -65,77 +63,195 @@ const Faq = () => {
             </div>
 
             <div className="col-sm-12 col-md-6 about_col_text_style col_text_style">
-              
-          <div className="accordion">
-
-
-
-<div className="accordion-item">
-  <button id="accordion-button" aria-expanded="false" onClick={toggleAccordion}>
-    <span className="accordion-title">What is TOJO Global?</span>
-    <span className="icon" aria-hidden="true"></span>
-  </button>
-  <div className="accordion-content">
-    <p>Cryptocurrency operates on decentralized networks based on blockchain technology. Transactions are recorded on a public ledger and validated by a network of computers (nodes) through a process called mining.</p>
-  </div>
-</div>
-<div className="accordion-item">
-  <button id="accordion-button" aria-expanded="false" onClick={toggleAccordion}>
-    <span className="accordion-title">What services we provide? </span>
-    <span className="icon" aria-hidden="true"></span>
-  </button>
-  <div className="accordion-content">
-    <p>Cryptocurrency operates on decentralized networks based on blockchain technology. Transactions are recorded on a public ledger and validated by a network of computers (nodes) through a process called mining.</p>
-  </div>
-</div>
-<div className="accordion-item">
-  <button id="accordion-button" aria-expanded="false" onClick={toggleAccordion}>
-    <span className="accordion-title">What services we provide? </span>
-    <span className="icon" aria-hidden="true"></span>
-  </button>
-  <div className="accordion-content">
-    <p>Cryptocurrency operates on decentralized networks based on blockchain technology. Transactions are recorded on a public ledger and validated by a network of computers (nodes) through a process called mining.</p>
-  </div>
-</div>
-<div className="accordion-item">
-  <button id="accordion-button" aria-expanded="false" onClick={toggleAccordion}>
-    <span className="accordion-title">What services we provide? </span>
-    <span className="icon" aria-hidden="true"></span>
-  </button>
-  <div className="accordion-content">
-    <p>Cryptocurrency operates on decentralized networks based on blockchain technology. Transactions are recorded on a public ledger and validated by a network of computers (nodes) through a process called mining.</p>
-  </div>
-</div>
-<div className="accordion-item">
-  <button id="accordion-button" aria-expanded="false" onClick={toggleAccordion}>
-    <span className="accordion-title">What services we provide? </span>
-    <span className="icon" aria-hidden="true"></span>
-  </button>
-  <div className="accordion-content">
-    <p>Cryptocurrency operates on decentralized networks based on blockchain technology. Transactions are recorded on a public ledger and validated by a network of computers (nodes) through a process called mining.</p>
-  </div>
-</div>
-<div className="accordion-item">
-  <button id="accordion-button" aria-expanded="false" onClick={toggleAccordion}>
-    <span className="accordion-title">What services we provide? </span>
-    <span className="icon" aria-hidden="true"></span>
-  </button>
-  <div className="accordion-content">
-    <p>Cryptocurrency operates on decentralized networks based on blockchain technology. Transactions are recorded on a public ledger and validated by a network of computers (nodes) through a process called mining.</p>
-  </div>
-</div>
-
-
-</div>
-
-
-
+              <div className="accordion">
+                <div className="accordion-item">
+                  <button
+                    id="accordion-button"
+                    aria-expanded="false"
+                    onClick={toggleAccordion}
+                  >
+                    <span className="accordion-title">
+                      What is TOJO Global?
+                    </span>
+                    <span className="icon" aria-hidden="true"></span>
+                  </button>
+                  <div className="accordion-content">
+                    <p>
+                      Cryptocurrency operates on decentralized networks based on
+                      blockchain technology. Transactions are recorded on a
+                      public ledger and validated by a network of computers
+                      (nodes) through a process called mining.
+                    </p>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <button
+                    id="accordion-button"
+                    aria-expanded="false"
+                    onClick={toggleAccordion}
+                  >
+                    <span className="accordion-title">
+                      What services we provide?{" "}
+                    </span>
+                    <span className="icon" aria-hidden="true"></span>
+                  </button>
+                  <div className="accordion-content">
+                    <p>
+                      Cryptocurrency operates on decentralized networks based on
+                      blockchain technology. Transactions are recorded on a
+                      public ledger and validated by a network of computers
+                      (nodes) through a process called mining.
+                    </p>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <button
+                    id="accordion-button"
+                    aria-expanded="false"
+                    onClick={toggleAccordion}
+                  >
+                    <span className="accordion-title">
+                      How does TOJO Global ensure your success?{" "}
+                    </span>
+                    <span className="icon" aria-hidden="true"></span>
+                  </button>
+                  <div className="accordion-content">
+                    <p>
+                      Cryptocurrency operates on decentralized networks based on
+                      blockchain technology. Transactions are recorded on a
+                      public ledger and validated by a network of computers
+                      (nodes) through a process called mining.
+                    </p>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <button
+                    id="accordion-button"
+                    aria-expanded="false"
+                    onClick={toggleAccordion}
+                  >
+                    <span className="accordion-title">
+                      What kinds of businesses does TOJO Global focus on?{" "}
+                    </span>
+                    <span className="icon" aria-hidden="true"></span>
+                  </button>
+                  <div className="accordion-content">
+                    <p>
+                      Cryptocurrency operates on decentralized networks based on
+                      blockchain technology. Transactions are recorded on a
+                      public ledger and validated by a network of computers
+                      (nodes) through a process called mining.
+                    </p>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <button
+                    id="accordion-button"
+                    aria-expanded="false"
+                    onClick={toggleAccordion}
+                  >
+                    <span className="accordion-title">
+                      What is blockchain?{" "}
+                    </span>
+                    <span className="icon" aria-hidden="true"></span>
+                  </button>
+                  <div className="accordion-content">
+                    <p>
+                      Cryptocurrency operates on decentralized networks based on
+                      blockchain technology. Transactions are recorded on a
+                      public ledger and validated by a network of computers
+                      (nodes) through a process called mining.
+                    </p>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <button
+                    id="accordion-button"
+                    aria-expanded="false"
+                    onClick={toggleAccordion}
+                  >
+                    <span className="accordion-title">
+                      What kind of marketing services do TOJO Global provide{" "}
+                    </span>
+                    <span className="icon" aria-hidden="true"></span>
+                  </button>
+                  <div className="accordion-content">
+                    <p>
+                      Cryptocurrency operates on decentralized networks based on
+                      blockchain technology. Transactions are recorded on a
+                      public ledger and validated by a network of computers
+                      (nodes) through a process called mining.
+                    </p>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <button
+                    id="accordion-button"
+                    aria-expanded="false"
+                    onClick={toggleAccordion}
+                  >
+                    <span className="accordion-title">
+                      How can I be sure that your business will deliver what I
+                      want?{" "}
+                    </span>
+                    <span className="icon" aria-hidden="true"></span>
+                  </button>
+                  <div className="accordion-content">
+                    <p>
+                      Cryptocurrency operates on decentralized networks based on
+                      blockchain technology. Transactions are recorded on a
+                      public ledger and validated by a network of computers
+                      (nodes) through a process called mining.
+                    </p>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <button
+                    id="accordion-button"
+                    aria-expanded="false"
+                    onClick={toggleAccordion}
+                  >
+                    <span className="accordion-title">
+                      Do you offer ongoing support and maintenance?{" "}
+                    </span>
+                    <span className="icon" aria-hidden="true"></span>
+                  </button>
+                  <div className="accordion-content">
+                    <p>
+                      Cryptocurrency operates on decentralized networks based on
+                      blockchain technology. Transactions are recorded on a
+                      public ledger and validated by a network of computers
+                      (nodes) through a process called mining.
+                    </p>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <button
+                    id="accordion-button"
+                    aria-expanded="false"
+                    onClick={toggleAccordion}
+                  >
+                    <span className="accordion-title">
+                      How are your marketing plans different from others?{" "}
+                    </span>
+                    <span className="icon" aria-hidden="true"></span>
+                  </button>
+                  <div className="accordion-content">
+                    <p>
+                      Cryptocurrency operates on decentralized networks based on
+                      blockchain technology. Transactions are recorded on a
+                      public ledger and validated by a network of computers
+                      (nodes) through a process called mining.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;

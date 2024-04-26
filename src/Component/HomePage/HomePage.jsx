@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { FaArrowRight, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import Faq from "./Faq";
+import Footer from "../Footer/Footer";
 
 const HomePage = () => {
   useEffect(() => {
@@ -392,7 +393,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-{/* ================================================================================
+      {/* ================================================================================
                   Meet the team section 
 =========================================================================== */}
       <div className="common-div-style Our_service_div ">
@@ -525,8 +526,10 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-{/* faq  */}
-  <Faq/>
+      {/* faq  */}
+      <Faq />
+      {/* faq  */}
+      <Footer />
     </>
   );
 };

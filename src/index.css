@@ -406,7 +406,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   border-bottom: 3px solid var(--text-color);
 }
 .about_col_image_style img {
-  height: 22rem;
+  height: 19rem;
   width: 85%;
   margin: 0 auto;
 }
@@ -419,7 +419,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 
 .animation-image img {
   display: block;
-  width: 100%;
+  width: 85%;
   height: auto;
   transition: transform 0.3s ease; /* Smooth transition for animation */
 }
@@ -626,107 +626,92 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 
 /* ========================================================================= */
 /* Faq  section start  */
-.faq{
-
-}
-.faq_col_image_style img{
-
-}
-.accordion{
+.accordion {
   margin: 0px 1rem;
-  
 }
- .accordion .accordion-item {	 
-   border:none;
-   background-color:var(--bg-color);
-   
+.accordion .accordion-item {
+  border: none;
+  background-color: var(--bg-color);
 }
- .accordion .accordion-item button[aria-expanded='true'] {
-	 /* border-bottom: 1px solid #E16565; */
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 400;
+  outline: none;
+  margin-bottom: 0.7rem;
+  background-color: var(--bg-color);
+  border: 0.1rem solid var(--text-second-color);
+  border-radius: 0.6rem;
 }
- .accordion button {
-	 position: relative;
-	 display: block;
-	 text-align: left;
-	 width: 100%;
-	 padding: 0.8rem 1.5rem;
-	 color: var(--text-color);
-	 font-size: 1.2rem;
-	 font-weight: 300;   
-	 outline: none;
-   margin-bottom: 0.7rem;
-   background-color:var(--bg-color);
-   border:0.1rem solid var(--text-second-color);
-   border-radius:0.6rem;
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: var(--main-color);
+  transition: color 1s ease;
 }
- .accordion button:hover, .accordion button:focus {
-	 cursor: pointer;
-	 color: var(--main-color);
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: var(--main-color);
 }
- .accordion button:hover::after, .accordion button:focus::after {
-	 cursor: pointer;
-	 color: var(--main-color);
-	 /* border: 1px solid #E16565; */
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
 }
- .accordion button .accordion-title {
-	 /* padding: 0.5rem 0.5em 0.5rem 0; */
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
 }
- .accordion button .icon {
-	 display: inline-block;
-	 position: absolute;
-	 top: 18px;
-	 right: 0;
-	 width: 22px;
-	 height: 22px;
-	 border: 1px solid;
-	 border-radius: 22px;
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
 }
- .accordion button .icon::before {
-	 display: block;
-	 position: absolute;
-	 content: '';
-	 top: 9px;
-	 left: 5px;
-	 width: 10px;
-	 height: 2px;
-	 background: currentColor;
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
 }
- .accordion button .icon::after {
-	 display: block;
-	 position: absolute;
-	 content: '';
-	 top: 5px;
-	 left: 9px;
-	 width: 2px;
-	 height: 10px;
-	 background: currentColor;
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 100em;
+  transition: all 250ms linear;
+  will-change: opacity, max-height;
 }
- .accordion button[aria-expanded='true'] {
-	 /* color: #E16565; */
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
 }
- .accordion button[aria-expanded='true'] .icon::after {
-	 width: 0;
-}
- .accordion button[aria-expanded='true'] + .accordion-content {
-	 opacity: 1;
-	 max-height: 100em;
-	 transition: all 200ms linear;
-	 will-change: opacity, max-height;
-}
- .accordion .accordion-content {
-	 opacity: 0;
-	 max-height: 0;
-	 overflow: hidden;
-	 transition: opacity 200ms linear, max-height 200ms linear;
-	 will-change: opacity, max-height;
-}
- .accordion .accordion-content p {
-	 font-size: 1.2rem;
-	 font-weight: 300;
-   padding: 0rem 1.6rem;
-   text-align: left;
-	 /* margin: 2em 0; */
-   color: var(--text-color);
+.accordion .accordion-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0rem 1.6rem;
+  text-align: left;
+  color: var(--text-color);
 }
 
 /* animation image  */
@@ -742,9 +727,181 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 
 .mouse-move-animation {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
-/* Faq section end  */
+/* ========================================================================= */
+/* Footer section start  */
+
+.footer-div-style {
+  background: #171450;
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+}
+.footer_box {
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-radius: 0.8rem;
+  color: var(--text-color);
+}
+.footer_box_text_div {
+  padding-left: 5rem;
+}
+.footer_heading {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: var(--font-main);
+}
+.footer_box_services {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.footer_box_services_div {
+  display: flex;
+  padding-right: 1.2rem;
+  text-align: left;
+  font-size: 1rem;
+}
+.footer_box_services_div .footer_box_icon {
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+.footer_box_btn_div {
+  text-align: center;
+}
+.footer_box_btn {
+  margin-right: 2rem;
+}
+.customFooterBoxbtn1 {
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 10rem;
+  font-size: 1.2rem;
+  transition: all 1s ease;
+}
+.customFooterBoxbtn1:hover,
+.customFooterBoxbtn2:hover {
+  color: var(--text-color);
+}
+.customFooterBoxbtn2 {
+  background: var(--text-color);
+  color: var(--bg-color);
+  border-radius: 10rem;
+  transition: all 1s ease;
+  font-size: 1.2rem;
+}
+.footer_menubar {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.footer_menubar_col_text {
+  color: var(--text-color);
+  text-align: left;
+}
+.footer_menubar_col_text img {
+  padding-bottom: 1.5rem;
+}
+.footer_menubar_col_text p {
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.footer_menu_list {
+  margin-top: 1.5rem;
+}
+.footer_menu_list h5 {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+.footer_menu_list ul {
+  list-style-type: none;
+}
+.footer_menu_list ul li {
+  padding: 0.3rem 0rem;
+  text-align: left;
+}
+.footer_menu_list ul li a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16.41px;
+  color: var(--text-color);
+}
+.footer_menu_list ul li a:hover {
+  color: var(--main-color);
+  transition: all 1s ease;
+}
+
+.footer_social_media .footer_social_media_link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
+  border: 0.2rem solid var(--bg-color);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: var(--bg-color) !important;
+  margin: 0.2rem 0.4rem 1.5rem 0;
+  transition: background 2s ease;
+}
+
+.footer_social_media a:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+  /* box-shadow: 0 0 1rem var(--bg-color); */
+}
+.footer_horizontal {
+  border: 1px solid #ffffff59;
+}
+.footer_menu_list_style {
+  padding-top: 1.5rem;
+}
+.footer_menu_list_style ul {
+  display: flex;
+  list-style-type: none;
+}
+.footer_menu_list_style ul li {
+  margin-right: 1.7rem;
+}
+.footer_menu_list_style ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.footer_menu_list_style ul li span {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+}
+.footer_menu_list_style ul li a:hover {
+  color: var(--main-color);
+  transition: all 1s ease;
+}
+
 /* ========================================================================= */
 /* media query  */
 /* =========================================== */
@@ -783,6 +940,13 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   .faq_row_style img {
     height: 25rem;
   }
+  /* footer */
+  .footer_box_text_div {
+    padding-left: 1.5rem;
+  }
+  .footer_menu_list_style ul li {
+    margin-right: 0.8rem;
+  }
 }
 @media (max-width: 992px) {
   /* ...
@@ -813,6 +977,17 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   /* faq */
   .faq_row_style img {
     height: 18rem;
+  }
+  /* footer */
+  .footer_box_text_div {
+    padding-left: 1.2rem;
+  }
+  .customFooterBoxbtn1 {
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  .footer_menu_list_style ul li {
+    margin-right: 0.5rem;
   }
 }
 @media (max-width: 768px) {
@@ -850,21 +1025,21 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 
   /* Ai Service image style */
   .ai_service {
-    height: 12.5rem;
+    height: 7.5rem;
     max-width: 480px;
     /* width: 90%;  */
     position: absolute;
-    top: 50.5rem;
+    top: 45.5rem;
     padding: 0.5rem 0.7rem;
   }
   .AiService_col_image_style img {
     width: 100%;
-    height: 1.8rem;
-    margin-bottom: 1.5rem;
+    height: 1.1rem;
+    margin-bottom: 0.5rem;
   }
   /* about */
   .about_div {
-    padding: 9rem 0rem;
+    padding: 5rem 0rem;
   }
   /* team */
   .team_col_style {
@@ -878,6 +1053,23 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   /* faq */
   .faq_row_style img {
     margin: 0 auto;
+  }
+  /* Footer  */
+  .footer_box_text_div {
+    padding-left: 0rem;
+  }
+
+  .footer_row_box {
+    text-align: center;
+  }
+  .footer_box_services {
+    justify-content: center;
+  }
+  .footer_box_btn {
+    margin-right: 1rem;
+  }
+  .footer_menu_list_style ul li {
+    margin-right: 0.5rem;
   }
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

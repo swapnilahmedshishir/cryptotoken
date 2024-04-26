@@ -2,18 +2,18 @@ import { Container, Navbar } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
-import Typed from 'typed.js';
+import Typed from "typed.js";
 import { useEffect } from "react";
 
 function NavbarNav() {
   useEffect(() => {
     // Initialize Typed.js
-    const typed = new Typed('.multiple_text', {
-      strings: [' Book Intro Call'],
+    const typed = new Typed(".multiple_text", {
+      strings: [" Book Intro Call"],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,
-      loop: true
+      loop: true,
     });
 
     // Cleanup function to destroy Typed.js instance when component unmounts
@@ -47,7 +47,7 @@ function NavbarNav() {
                 <ul>
                   <li className="menu_item">
                     <span className="services">
-                      Services <IoIosArrowDown className="icon_bar"/>
+                      Services <IoIosArrowDown className="icon_bar" />
                     </span>
                     <div className="dropdown_menu">
                       <ul className="submenu">
@@ -246,7 +246,7 @@ function NavbarNav() {
                 <ul>
                   <li className="menu_item">
                     <span className="services">
-                      Company <IoIosArrowDown  className="icon_bar"/>
+                      Company <IoIosArrowDown className="icon_bar" />
                     </span>
                     <div className="dropdown_menu comapny_dropdown_menu">
                       <ul className="submenu">
@@ -282,11 +282,11 @@ function NavbarNav() {
               <NavLink to="/contact"></NavLink>
             </Nav>
             <div>
-            <NavLink to="/contact">
-            <button type="button" className="contactBtn">             
-              <span className="multiple_text"></span>
-              </button>
-            </NavLink>              
+              <NavLink to="/contact">
+                <button type="button" className="contactBtn">
+                  <span className="multiple_text"></span>
+                </button>
+              </NavLink>
             </div>
           </Navbar.Collapse>
         </Container>
