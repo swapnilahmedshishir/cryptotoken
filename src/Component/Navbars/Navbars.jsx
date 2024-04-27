@@ -37,7 +37,7 @@ function NavbarNav() {
               <NavLink to="/home" className="nav_text">
                 Home
               </NavLink>
-              <NavLink to="/our-team" className="nav_text">
+              <NavLink to="/about-us" className="nav_text">
                 About Us
               </NavLink>
 

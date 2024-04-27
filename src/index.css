@@ -46,7 +46,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .common-div-style {
   background: var(--fourth-bg-color);
   color: var(--text-color);
-  padding: 4rem 0rem;
+  padding: 3rem 0rem;
 }
 .header-one-style {
   text-align: center;
@@ -55,9 +55,10 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 .col_text_style strong {
   font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 3.5rem;
-  font-family: var(--font-main);
+  letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 4.5rem;
+    font-family: var(--font-main)
 }
 
 .col_text_style strong span {
@@ -65,7 +66,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 
 .col_text_style p {
-  font-family: Open Sans;
+  font-family: var( --font-main);
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -221,7 +222,8 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /* ========================================================================= */
 /* Erro Page  */
 .erro_page_div {
-  height: 89vh;
+  height: 90vh;
+  padding: 3rem 0rem;
   background-color: #020238;
 }
 .erro_text_div {
@@ -230,7 +232,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .erro-text-fof {
   font-size: 17rem;
   color: var(--text-color);
-  font-weight: 400;
+  font-weight: 500;
 }
 .erro_text_div h5 {
   font-size: 1.5rem;
@@ -293,6 +295,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 .hero_text_style h1 {
   font-size: 3.2rem;
+  letter-spacing: 2px;
   font-weight: 500;
   line-height: 4.5rem;
   padding: 0rem 0.7rem;
@@ -388,7 +391,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .about_div {
   background: var(--bg-color);
   color: var(--text-color);
-  padding: 7rem 0rem;
+  padding: 3rem 0rem;
 }
 
 .about_col_text_style {
@@ -401,7 +404,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   margin-right: 0.7rem;
 }
 .border_style {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   width: 170px;
   border-bottom: 3px solid var(--text-color);
 }
@@ -484,7 +487,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   padding: 3rem 1.5rem;
   margin: 0px 2rem;
   border-radius: 0.9rem;
-  font-family: Open Sans;
+  font-family: var( --font-main);
   box-shadow: #ffffff59 0px 2px 5px, var(--text-color) 0px 2px 5px -3px;
   flex: 1;
   transition: 0.5s ease;
@@ -506,7 +509,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 .services_col_text_style p {
   font-size: 1.2rem;
-  font-family: Open Sans;
+  font-family: var( --font-main);
   font-weight: 400;
   line-height: 27px;
 }
@@ -544,7 +547,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   height: 100%;
 }
 
-/*  Team Meta section  */
+/*  Team Meet section  */
 .team_row_style {
   display: flex;
   flex-wrap: wrap;
@@ -882,7 +885,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .footer_menu_list_style ul li a {
   text-decoration: none;
   color: var(--text-color);
-  font-family: Open Sans;
+  font-family: var( --font-main);
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -891,7 +894,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .footer_menu_list_style ul li span {
   text-decoration: none;
   color: var(--text-color);
-  font-family: Open Sans;
+  font-family: var( --font-main);
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -900,6 +903,90 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .footer_menu_list_style ul li a:hover {
   color: var(--main-color);
   transition: all 1s ease;
+}
+/* ========================================================================= */
+/* About us Section */
+
+/* animation image  */
+.Who-We-Are-section-image {
+  position: relative;
+  overflow: hidden; /* Ensure image stays within its container */
+}
+
+.Who-We-Are-section-image img {
+  display: block;
+  width: 85%;
+  height: auto;
+  transition: transform 0.9s ease; /* Smooth transition for animation */
+}
+
+.mouse-move-animation {
+  transition: transform 0.3s ease; /* Smooth transition for animation */
+}
+.Who_We_Are_text_div{
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 1.7rem;
+}
+.Who_We_Are_text_div span{
+  color: var(--main-color);
+  font-family: var( --font-main);
+font-size: 20px;
+font-weight: 600;
+line-height: 28px;
+text-align: justify;
+
+}
+.Who_We_Are_border_style {
+  margin-right: 1.6rem;
+  margin-bottom: 0.6rem;
+  width: 4.7rem;
+  border-bottom: 2px solid var(--text-color);
+}
+.Who_We_Are_text_heading{
+font-family: var( --font-main);
+font-size: 32px;
+font-weight: 500;
+line-height: 40px;
+padding-left: 0rem;
+padding-right: 4rem;
+text-transform: capitalize;
+}
+
+/* ========================================================================= */
+/* our Value Section */
+.our  {
+
+}
+
+/* animation image  */
+.Our-Value-section-image{
+  position: relative;
+  overflow: hidden; /* Ensure image stays within its container */
+}
+
+.Our-Value-section-image img {
+  display: block;
+  width: 85%;
+  height: auto;
+  transition: transform 1s ease; /* Smooth transition for animation */
+}
+
+.mouse-move-animation {
+  transition: transform 0.3s ease; /* Smooth transition for animation */
+}
+
+.Our_Value_text_heading {
+  font-family: var(--font-main);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 0rem;
+  padding-right: 16rem;
+  text-transform: capitalize;
+}
+.Our_Value_image_style {
+padding-top: 11rem;
 }
 
 /* ========================================================================= */
@@ -947,6 +1034,10 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   .footer_menu_list_style ul li {
     margin-right: 0.8rem;
   }
+  /* about page  */
+  .Our_Value_text_heading{
+    padding-right: 1rem;
+  }
 }
 @media (max-width: 992px) {
   /* ...
@@ -989,6 +1080,14 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   .footer_menu_list_style ul li {
     margin-right: 0.5rem;
   }
+   /* about page  */
+   .Who_We_Are_text_heading{
+    padding-right: 0rem;
+
+  }
+   .Our_Value_text_heading{
+    padding-right: 0.5rem;
+  }
 }
 @media (max-width: 768px) {
   /* ...
@@ -1018,6 +1117,9 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 
   .col_text_style {
     margin-top: 3rem;
+  }
+  .col_text_style strong{
+    font-size: 3rem;
   }
   .border_style {
     width: 95px;
@@ -1070,6 +1172,15 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   }
   .footer_menu_list_style ul li {
     margin-right: 0.5rem;
+  }
+  
+  /* about page  */
+  .Who_We_Are_text_heading{
+    padding-right: 0rem;
+
+  }
+  .Our_Value_text_heading{
+    padding-right: 0rem;
   }
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
