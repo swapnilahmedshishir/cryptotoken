@@ -56,9 +56,9 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .col_text_style strong {
   font-size: 3.2rem;
   letter-spacing: 2px;
-    font-weight: 500;
-    line-height: 4.5rem;
-    font-family: var(--font-main)
+  font-weight: 500;
+  line-height: 4.5rem;
+  font-family: var(--font-main);
 }
 
 .col_text_style strong span {
@@ -66,7 +66,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 
 .col_text_style p {
-  font-family: var( --font-main);
+  font-family: var(--font-main);
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -279,7 +279,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   margin-top: -2rem;
 }
 .hero_row_style {
-  padding-bottom: 5.22875rem;
+  padding-bottom: 3.22875rem;
   padding-top: 4.5rem;
   display: flex;
   align-items: center;
@@ -358,20 +358,19 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   color: var(--main-color);
 }
 /* Ai Service image style */
-.ai_service {
-  /* background: #ffffffcc; */
+/* .ai_service {  
   background: #faf7f7;
   height: 5rem;
-  width: 90%; /* Adjust width as needed */
-  max-width: 1000px; /* Example maximum width */
-  margin: 0 auto; /* Center horizontally */
+  width: 90%; 
+  max-width: 1000px; 
+  margin: 0 auto; 
   position: absolute;
   top: 36.2rem;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
   z-index: 2;
-  /* box-shadow: 0rem -0.2rem 10rem 0.5rem rgba(7, 97, 124, 0.939); */
+  box-shadow: 0rem -0.2rem 10rem 0.5rem rgba(7, 97, 124, 0.939);
 }
 .AiService_row_image_style {
   padding-top: 1.3rem;
@@ -385,7 +384,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 .AiService_col_image_style img:hover {
   cursor: pointer;
-}
+} */
 
 /* About design */
 .about_div {
@@ -487,7 +486,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   padding: 3rem 1.5rem;
   margin: 0px 2rem;
   border-radius: 0.9rem;
-  font-family: var( --font-main);
+  font-family: var(--font-main);
   box-shadow: #ffffff59 0px 2px 5px, var(--text-color) 0px 2px 5px -3px;
   flex: 1;
   transition: 0.5s ease;
@@ -509,7 +508,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 .services_col_text_style p {
   font-size: 1.2rem;
-  font-family: var( --font-main);
+  font-family: var(--font-main);
   font-weight: 400;
   line-height: 27px;
 }
@@ -885,7 +884,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .footer_menu_list_style ul li a {
   text-decoration: none;
   color: var(--text-color);
-  font-family: var( --font-main);
+  font-family: var(--font-main);
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -894,7 +893,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .footer_menu_list_style ul li span {
   text-decoration: none;
   color: var(--text-color);
-  font-family: var( --font-main);
+  font-family: var(--font-main);
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -923,19 +922,18 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .mouse-move-animation {
   transition: transform 0.3s ease; /* Smooth transition for animation */
 }
-.Who_We_Are_text_div{
+.Who_We_Are_text_div {
   display: flex;
   padding-top: 0.5rem;
   padding-bottom: 1.7rem;
 }
-.Who_We_Are_text_div span{
+.Who_We_Are_text_div span {
   color: var(--main-color);
-  font-family: var( --font-main);
-font-size: 20px;
-font-weight: 600;
-line-height: 28px;
-text-align: justify;
-
+  font-family: var(--font-main);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: justify;
 }
 .Who_We_Are_border_style {
   margin-right: 1.6rem;
@@ -943,29 +941,25 @@ text-align: justify;
   width: 4.7rem;
   border-bottom: 2px solid var(--text-color);
 }
-.Who_We_Are_text_heading{
-font-family: var( --font-main);
-font-size: 32px;
-font-weight: 500;
-line-height: 40px;
-padding-left: 0rem;
-padding-right: 4rem;
-text-transform: capitalize;
+.Who_We_Are_text_heading {
+  font-family: var(--font-main);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 0rem;
+  padding-right: 4rem;
+  text-transform: capitalize;
 }
 
 /* ========================================================================= */
 /* our Value Section */
-.our  {
-
-}
-
 /* animation image  */
-.Our-Value-section-image{
+.Our-Value-section-image {
   position: relative;
   overflow: hidden; /* Ensure image stays within its container */
 }
 
-.Our-Value-section-image img {
+.Our-Value-section-image .bannerImage {
   display: block;
   width: 85%;
   height: auto;
@@ -986,7 +980,62 @@ text-transform: capitalize;
   text-transform: capitalize;
 }
 .Our_Value_image_style {
-padding-top: 11rem;
+  padding-top: 16rem;
+}
+/* Our_Value_Services */
+.Our_Value_Services {
+  display: flex;
+  margin-top: 2.6rem;
+}
+
+.Our_Value_Services_image_div .Our_Value_Services_image {
+  background: #f7f4f4;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 8rem;
+}
+.Our_Value_Services_image:nth-last-child(1) {
+  margin-bottom: 0rem;
+}
+
+.Our_Value_Services_image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.1rem;
+}
+.Our_Value_Services_images_border {
+  position: absolute;
+  margin-left: 2rem;
+  height: 12.5rem;
+  border-left: 0.099rem solid var(--text-color);
+}
+.Our_Value_Services_text_div {
+  margin-left: 3.5rem;
+  margin-right: 9.5rem;
+}
+.Our_Value_Services_text {
+  margin-bottom: 6.7rem;
+}
+.Our_Value_Services_text:nth-last-child(1) {
+  margin-bottom: 0rem;
+}
+.Our_Value_Services_text h6 {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: justify;
+}
+.Our_Value_Services_text P {
+  font-family: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: justify;
 }
 
 /* ========================================================================= */
@@ -1000,13 +1049,14 @@ padding-top: 11rem;
   .hero_text_style p {
     padding: 0rem 7.5rem;
   }
-  .ai_service {
+  /* .ai_service {
     top: 39.2rem;
-  }
+  } */
 
   /* universal design */
   .col_image_style img {
-    height: 30rem;
+    height: 23rem;
+    margin-top: 2rem;
   }
   .border_style {
     width: 120px;
@@ -1035,8 +1085,19 @@ padding-top: 11rem;
     margin-right: 0.8rem;
   }
   /* about page  */
-  .Our_Value_text_heading{
+  .Our_Value_text_heading {
     padding-right: 1rem;
+  }
+  .Our_Value_Services_text_div {
+    margin-right: 2.7rem;
+  }
+  .Our-Value-section-image .bannerImage {
+    display: inline-block;
+    height: 17rem;
+    margin-top: 0rem;
+  }
+  .Our_Value_image_style {
+    padding-top: 25rem;
   }
 }
 @media (max-width: 992px) {
@@ -1055,8 +1116,21 @@ padding-top: 11rem;
   }
 
   /* Ai Service image style */
-  .ai_service {
+  /* .ai_service {
     top: 46rem;
+  } */
+  .col_text_style strong {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+  .col_text_style p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .border_style {
+    width: 97px;
+    border-bottom: 2px solid var(--text-color);
   }
   /* team */
   .team_col_style {
@@ -1080,13 +1154,30 @@ padding-top: 11rem;
   .footer_menu_list_style ul li {
     margin-right: 0.5rem;
   }
-   /* about page  */
-   .Who_We_Are_text_heading{
+  /* about page  */
+  .Who_We_Are_text_heading {
     padding-right: 0rem;
-
   }
-   .Our_Value_text_heading{
+  .Our_Value_text_heading {
     padding-right: 0.5rem;
+  }
+
+  .Our_Value_Services_image_div .Our_Value_Services_image {
+    width: 3rem;
+    height: 3rem;
+  }
+  .Our_Value_Services_image img {
+    width: 1.7rem;
+  }
+  .Our_Value_Services_images_border {
+    margin-left: 1.5rem;
+  }
+  .Our_Value_Services_text_div {
+    margin-left: 1.7rem;
+    margin-right: 1.5rem;
+  }
+  .Our_Value_Services_text {
+    margin-bottom: 5.4rem;
   }
 }
 @media (max-width: 768px) {
@@ -1101,12 +1192,28 @@ padding-top: 11rem;
   }
   /* hero */
   .hero_row_style {
-    padding-bottom: 7.22875rem;
+    padding-bottom: 2.22875rem;
   }
   .hero_text_style h1 {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     padding: 0rem;
-    line-height: 3.2rem;
+    line-height: 1.8rem;
+  }
+  .hero_col_text_style {
+    padding-right: 0.5rem;
+  }
+  .hero_col_text_style p {
+    padding: 0rem 0.4rem 0.4rem 0rem;
+  }
+  .hero_text_style p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    padding: 0rem 0rem;
+  }
+  .hero_text_style p span {
+    font-size: 1.2rem;
+    font-weight: 400;
   }
   .hero_btn_style .hero_btn1 {
     margin-right: 0rem;
@@ -1118,18 +1225,32 @@ padding-top: 11rem;
   .col_text_style {
     margin-top: 3rem;
   }
-  .col_text_style strong{
-    font-size: 3rem;
+  .col_text_style strong {
+    font-size: 1.8rem;
+  }
+  .col_text_style p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 0rem 0.2rem;
   }
   .border_style {
     width: 95px;
   }
-
+  .common-div-style {
+    padding: 2rem 0rem;
+  }
+  .col_text_style {
+    margin-top: 0.5rem;
+  }
+  .header-one-style {
+    padding-bottom: 1rem;
+  }
   /* Ai Service image style */
-  .ai_service {
+  /* .ai_service {
     height: 7.5rem;
     max-width: 480px;
-    /* width: 90%;  */
+    width: 90%; 
     position: absolute;
     top: 45.5rem;
     padding: 0.5rem 0.7rem;
@@ -1138,10 +1259,18 @@ padding-top: 11rem;
     width: 100%;
     height: 1.1rem;
     margin-bottom: 0.5rem;
-  }
+  } */
   /* about */
   .about_div {
-    padding: 5rem 0rem;
+    padding: 1rem 0rem;
+  }
+  .col_image_style img {
+    height: 11rem;
+    margin-top: 1rem;
+  }
+  /* services  */
+  .services_col_style {
+    margin-top: 4rem;
   }
   /* team */
   .team_col_style {
@@ -1152,15 +1281,38 @@ padding-top: 11rem;
     margin-bottom: 2rem;
     /* padding: 1.7rem  1.7rem; */
   }
+  .team_row_style {
+    margin-top: 2rem;
+  }
   /* faq */
   .faq_row_style img {
     margin: 0 auto;
+  }
+  .accordion button {
+    padding: 0.7rem 1.9rem 0.7rem 0.7rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+  .accordion button .icon {
+    position: absolute;
+    top: 11px;
+    right: -0.4rem;
+    border: 1px solid;
+  }
+  .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 0.2rem;
+    text-align: start;
   }
   /* Footer  */
   .footer_box_text_div {
     padding-left: 0rem;
   }
-
+  .footer_box_services_div {
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+  }
   .footer_row_box {
     text-align: center;
   }
@@ -1173,14 +1325,46 @@ padding-top: 11rem;
   .footer_menu_list_style ul li {
     margin-right: 0.5rem;
   }
-  
-  /* about page  */
-  .Who_We_Are_text_heading{
-    padding-right: 0rem;
-
+  ul {
+    padding-left: 0rem;
   }
-  .Our_Value_text_heading{
+
+  /* about page  */
+  .Who_We_Are_text_div span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+  .Who_We_Are_border_style {
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+    width: 2.7rem;
+  }
+  .Who_We_Are_text_heading {
     padding-right: 0rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  .Our_Value_text_heading {
+    padding-right: 0rem;
+  }
+  .Our_Value_Services_text_div {
+    margin-right: 0.7rem;
+  }
+  .Our_Value_image_style {
+    padding-top: 5rem;
+  }
+  .Our_Value_Services_text P {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .Our_Value_Services_text {
+    margin-bottom: 5rem;
+  }
+  .Our-Value-section-image .bannerImage {
+    display: inline-block;
+    height: 14rem;
+    margin-top: 2rem;
   }
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

@@ -236,7 +236,7 @@ function NavbarNav() {
 
               {/* submenu bar services area end */}
 
-              <NavLink to="/gallery" className="nav_text">
+              <NavLink to="/clients" className="nav_text">
                 Clients
               </NavLink>
 

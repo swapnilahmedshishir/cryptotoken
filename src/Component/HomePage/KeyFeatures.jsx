@@ -1,9 +1,7 @@
-
-
 const KeyFeatures = () => {
   return (
     <>
-     {/* ================================================================================
+      {/* ================================================================================
                   Key Features section 
 =========================================================================== */}
       <div className="common-div-style">
@@ -100,9 +98,8 @@ const KeyFeatures = () => {
           </div>
         </div>
       </div>
-      
     </>
-  )
-}
+  );
+};
 
-export default KeyFeatures
+export default KeyFeatures;

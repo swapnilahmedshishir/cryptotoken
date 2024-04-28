@@ -1,35 +1,34 @@
-import { Link } from 'react-router-dom'
-import { FaArrowRight} from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa6";
 import Typed from "typed.js";
 import { useEffect } from "react";
 
 const Hero = () => {
-    useEffect(() => {
-        // Initialize Typed.js
-        const typed = new Typed(".hero_multiple_text", {
-          strings: [
-            "Book Intro Call",
-            "startups",
-            "small businesses",
-            "B2B companies",
-            "cryptocurrency",
-            "blockchain",
-            "fintech etc.",
-          ],
-          typeSpeed: 90,
-          backSpeed: 90,
-          backDelay: 890,
-          loop: true,
-        });
-    
-        // Cleanup function to destroy Typed.js instance when component unmounts
-        return () => {
-          typed.destroy();
-        };
-      }, []);
+  useEffect(() => {
+    // Initialize Typed.js
+    const typed = new Typed(".hero_multiple_text", {
+      strings: [
+        "Book Intro Call",
+        "startups",
+        "small businesses",
+        "B2B companies",
+        "cryptocurrency",
+        "blockchain",
+        "fintech etc.",
+      ],
+      typeSpeed: 90,
+      backSpeed: 90,
+      backDelay: 890,
+      loop: true,
+    });
+
+    // Cleanup function to destroy Typed.js instance when component unmounts
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
-    <>    
-     
+    <>
       <div className="hero_div">
         <div className="container hero_row_style">
           <div className="hero_col_text_style">
@@ -66,7 +65,7 @@ const Hero = () => {
 
         {/* ================================================================================
                   ai service section 
-=========================================================================== */}
+=========================================================================== 
 
         <div className="ai_service">
           <div className="container">
@@ -89,10 +88,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        */}
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
