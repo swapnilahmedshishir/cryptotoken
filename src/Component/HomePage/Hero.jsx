@@ -7,14 +7,13 @@ const Hero = () => {
   useEffect(() => {
     // Initialize Typed.js
     const typed = new Typed(".hero_multiple_text", {
-      strings: [
-        "Book Intro Call",
+      strings: [       
         "startups",
         "small businesses",
         "B2B companies",
         "cryptocurrency",
         "blockchain",
-        "fintech etc.",
+        "fintech",
       ],
       typeSpeed: 90,
       backSpeed: 90,

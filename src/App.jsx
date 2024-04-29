@@ -5,6 +5,8 @@ import Erro from "./Component/ErroPage/Erro";
 import AboutPage from "./Component/AboutPage/AboutPage";
 import Clients from "./Component/ClientsPages/Clients";
 import Footer from "./Component/Footer/Footer";
+import TeamPage from "./Component/TeamMangementPage/TeamPage";
+import CareerPage from "./Component/CareerPage/CareerPage";
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <Route path="/home" element={<HomePage />} />
         <Route path="/about-us" element={<AboutPage />} />
         <Route path="/clients" element={<Clients />} />
+        <Route path="/team" element={<TeamPage />} />
+        <Route path="/career" element={<CareerPage />} />
 
         <Route path="*" element={<Erro />} />
       </Routes>

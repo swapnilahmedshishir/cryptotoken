@@ -60,6 +60,28 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   line-height: 4.5rem;
   font-family: var(--font-main);
 }
+/* univarsal div */
+.univarsal_div{
+    background: #171450;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.univarsal_text_div{
+  color: var(--text-color);
+  margin: 0rem 17rem;
+  font-family: var(--font-main);
+  padding-bottom: 2.3rem;
+
+}
+.univarsal_text_div h1{
+font-size: 4.2rem;
+font-weight: 500;
+margin-bottom: 0.7rem;
+}
+
+.univarsal_text_div h1 span{
+color: var(--text-second-color);
+}
 
 .col_text_style strong span {
   color: var(--text-second-color);
@@ -436,7 +458,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   padding: 1rem 1.6rem;
 }
 .key_col_image_style .key_col_image_circle_style {
-  background: #f7f4f4;
+  background: #fff;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -736,7 +758,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 
 .footer-div-style {
   background: #171450;
-  padding-top: 5rem;
+  padding-top: 2.5rem;
   padding-bottom: 1.5rem;
 }
 .footer_box {
@@ -956,7 +978,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /* animation image  */
 .Our-Value-section-image {
   position: relative;
-  overflow: hidden; /* Ensure image stays within its container */
+  overflow: hidden; 
 }
 
 .Our-Value-section-image .bannerImage {
@@ -1037,7 +1059,24 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   line-height: 20px;
   text-align: justify;
 }
-
+/* ========================================================================= */
+/* clinet item */
+.client_image_div{
+  padding-top: 2rem;
+  text-align: center;
+}
+.client_item{  
+  margin-bottom: 2rem;
+}
+.client_item img{
+  opacity: 0.8;
+  max-width: 100%;
+}
+.client_item img:hover{
+  opacity: 1;
+  max-width: 100%;
+  transition:opacity 0.5ms ease;
+}
 /* ========================================================================= */
 /* media query  */
 /* =========================================== */
@@ -1046,12 +1085,19 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   /* ...
 	// rules here apply to devices from 993px to 1200px (inclusive)
 	... */
+   /* univarsal div */
+   .univarsal_text_div {
+    margin: 0rem 9rem;
+}
+
+/* home */
   .hero_text_style p {
     padding: 0rem 7.5rem;
   }
   /* .ai_service {
     top: 39.2rem;
   } */
+ 
 
   /* universal design */
   .col_image_style img {
@@ -1104,6 +1150,15 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   /* ...
 	// rules here apply to devices from 769px to 992px (inclusive)
 	... */
+  /* univarsal div */
+  .univarsal_text_div {
+    margin: 0rem 5rem;
+}
+.univarsal_text_div h1 {
+  font-size: 4rem;
+  margin-bottom: 0.6rem;
+  text-transform: capitalize;
+}
   .nav_text {
     margin: 1rem 0rem;
   }
@@ -1184,6 +1239,15 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   /* ...
 	// rules here apply to devices from 0px to 768px (inclusive)
 	... */
+  /* univasal text */
+  .univarsal_text_div {
+    margin: 0rem 0rem;
+}
+.univarsal_text_div h1 {
+  font-size: 3.2rem;
+  margin-bottom: 0.6rem;
+}
+
   .erro-text-fof {
     font-size: 10rem;
   }

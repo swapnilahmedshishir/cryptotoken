@@ -257,13 +257,13 @@ function NavbarNav() {
                         </li>
 
                         <li>
-                          <NavLink to="/listing" className="dropdown-item">
+                          <NavLink to="/team" className="dropdown-item">
                             Team
                           </NavLink>
                         </li>
 
                         <li>
-                          <NavLink to="/listing" className="dropdown-item">
+                          <NavLink to="/career" className="dropdown-item">
                             Careers
                           </NavLink>
                         </li>
