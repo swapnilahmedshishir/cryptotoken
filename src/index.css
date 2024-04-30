@@ -74,7 +74,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 
 }
 .univarsal_text_div h1{
-font-size: 4.2rem;
+font-size: 3.5rem;
 font-weight: 500;
 margin-bottom: 0.7rem;
 }
@@ -901,13 +901,13 @@ color: var(--text-second-color);
   list-style-type: none;
 }
 .footer_menu_list_style ul li {
-  margin-right: 1.7rem;
+  margin-right: 1rem;
 }
 .footer_menu_list_style ul li a {
   text-decoration: none;
   color: var(--text-color);
   font-family: var(--font-main);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
@@ -916,7 +916,7 @@ color: var(--text-second-color);
   text-decoration: none;
   color: var(--text-color);
   font-family: var(--font-main);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   text-align: right;
@@ -1077,6 +1077,147 @@ color: var(--text-second-color);
   max-width: 100%;
   transition:opacity 0.5ms ease;
 }
+
+/* ========================================================================= */
+/* conatct us Section */
+.contactus_text_section{
+  margin-top: 2rem;
+}
+.contactus_text_div{
+  color: var(--text-color);
+  padding-left: 3.9rem;
+  padding-top: 3.1rem;
+}
+.contactus_text_heading {
+  font-family: var(--font-main); 
+  /* padding-right: 1rem; */
+  text-transform: capitalize;
+  font-size: 3rem;
+font-weight: 500;
+line-height: 3.9rem;
+text-align: left;
+margin-bottom: 1.5rem;
+}
+.contactus_text_para{
+  font-family:var(--font-main);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: left;
+  margin-right: 6.5rem;  
+}
+
+.contactus_Services {
+  display: flex;
+  margin-top: 2.6rem;
+}
+
+.contactus_Services_icon_div .contactus_Services_icon {
+  background: #f7f4f4;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.7rem 0rem 0.7rem 0rem;
+  position: relative;
+  margin-bottom: 1.7rem;
+  color: var(--bg-color);
+}
+.contactus_Services_icon:nth-last-child(1) {
+  margin-bottom: 0rem;
+}
+.contactus_Services_icon .contactus_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+}
+
+.contactus_Services_text_div {
+  margin-left: 1.2rem;
+}
+.contactus_Services_text {
+  margin-bottom: 2.3rem;
+}
+.contactus_Services_text:nth-last-child(1) {
+  margin-bottom: 0rem;
+}
+
+.contactus_Services_text p{
+  font-family: var(--text-color);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+/* contact us form data  */
+.contactus_input_section{
+  background:#FFFFFFE5;
+  padding: 2.5rem 2rem;
+  margin-right: 9rem;
+  margin-left: 0.5rem;
+  border-radius: 2rem 0rem 2rem 0rem;
+
+}
+.contactus_input_section h3{
+  font-family: var(--font-main);
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+color: #01B5E8;
+margin-bottom: 1.8rem;
+
+}
+
+.contactus_input_fild{
+  font-family: var(--font-main);
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 1rem 0rem 1rem 0rem;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:#01B5E8;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 1rem 0rem 1rem 0rem;
+}
+input[type=submit]:hover {
+  background-color: #01B5E8;
+}
+
+textarea {
+  font-family: var(--font-main);
+  width: 100%;
+  height: 150px;
+  color: gray;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 1rem 0rem 1rem 0rem;
+  font-size: 16px;
+  resize: none;
+}
+/* ========================================================================= */
+/* blog Section */
+.blog_div{
+/* background:var(--text-color) */
+color: var(--text-color);
+}
+.blog_div img{
+  width: 100%;
+}
 /* ========================================================================= */
 /* media query  */
 /* =========================================== */
@@ -1145,6 +1286,19 @@ color: var(--text-second-color);
   .Our_Value_image_style {
     padding-top: 25rem;
   }
+  /* contact us page  */
+  .contactus_text_div {
+    padding-left: 0.9rem;
+}
+.contactus_text_heading {
+  font-size: 2.5rem;
+}
+.contactus_text_para {
+  margin-right: 2.9rem;
+}
+.contactus_input_section {
+  margin-right: 0rem;
+}
 }
 @media (max-width: 992px) {
   /* ...
@@ -1234,6 +1388,17 @@ color: var(--text-second-color);
   .Our_Value_Services_text {
     margin-bottom: 5.4rem;
   }
+  /* contact us page */
+  .contactus_input_section {
+    padding: 2.5rem 1.5rem;
+  }
+  .contactus_text_heading{
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+  .contactus_input_section h3{
+    font-size: 23px;
+  }
 }
 @media (max-width: 768px) {
   /* ...
@@ -1244,7 +1409,7 @@ color: var(--text-second-color);
     margin: 0rem 0rem;
 }
 .univarsal_text_div h1 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.6rem;
 }
 
@@ -1259,9 +1424,10 @@ color: var(--text-second-color);
     padding-bottom: 2.22875rem;
   }
   .hero_text_style h1 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     padding: 0rem;
-    line-height: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
   }
   .hero_col_text_style {
     padding-right: 0.5rem;
@@ -1386,6 +1552,9 @@ color: var(--text-second-color);
   .footer_box_btn {
     margin-right: 1rem;
   }
+  .footer_menu_list_style ul{
+    display: block;
+  }
   .footer_menu_list_style ul li {
     margin-right: 0.5rem;
   }
@@ -1430,6 +1599,22 @@ color: var(--text-second-color);
     height: 14rem;
     margin-top: 2rem;
   }
+  /* contact us section */
+  .contactus_input_section{
+    margin-top: 1.5rem;
+    margin-left: 0rem;
+  }
+  .contactus_text_section {
+    margin-top: 0rem;
+}
+.contactus_text_para{
+  line-height: 1.8rem;
+  margin-right: 0rem;
+  text-align: justify;
+}
+.contactus_text_div{
+  padding-top: 0rem;
+}
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

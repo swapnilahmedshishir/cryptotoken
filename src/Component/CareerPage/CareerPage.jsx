@@ -8,7 +8,7 @@ const CareerPage = () => {
         <div className="container">
          
          
-          <HeroText className='Career' heroText={{text1:'Career:', text2:'Build Your Future with Us', description:"TOJO Global is a leading digital solutions provider, offering a comprehensive suite of services in Management, Marketing, Development, Design, and Listing. We're a passionate team of experts dedicated to helping businesses thrive in the digital age."}}/>
+          <HeroText className='Career' heroText={{ text1:'Career:', text2:'Build Your Future with Us', description:"TOJO Global is a leading digital solutions provider, offering a comprehensive suite of services in Management, Marketing, Development, Design, and Listing. We're a passionate team of experts dedicated to helping businesses thrive in the digital age."}}/>
 
         
         {/* other text */}

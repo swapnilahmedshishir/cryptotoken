@@ -164,8 +164,8 @@ const Footer = () => {
 
         <div className="container">
           <div className="footer_menu_list_div">
-            <div className="row justify-content-between">
-              <div className="col-12 col-md-7">
+            <div className="row d-flex justify-content-between">
+              <div className="col-sm-12 col-md-6 col-lg-7">
                 <div className="footer_menu_list_style">
                   <ul>
                     <li>
@@ -186,14 +186,14 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-12 col-md-5">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="footer_menu_list_style">
                   <ul>
                     <li>
-                      <span>© 2024 Tojo Global</span>
+                      <span>©2024 Tojo Global</span>
                     </li>
                     <li>
-                      <span>Development by @swapnilahmedshishir</span>
+                      <span>Dev @swapnilahmedshishir</span>
                     </li>
                   </ul>
                 </div>

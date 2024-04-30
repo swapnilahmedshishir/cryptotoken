@@ -7,6 +7,8 @@ import Clients from "./Component/ClientsPages/Clients";
 import Footer from "./Component/Footer/Footer";
 import TeamPage from "./Component/TeamMangementPage/TeamPage";
 import CareerPage from "./Component/CareerPage/CareerPage";
+import ContactUS from "./Component/ContactUsPage/ContactUS";
+import BlogPage from "./Component/BlogPage/BlogPage";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/clients" element={<Clients />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/career" element={<CareerPage />} />
+        <Route path="/contact" element={<ContactUS />} />
+        <Route path="/blog" element={<BlogPage />} />
 
         <Route path="*" element={<Erro />} />
       </Routes>

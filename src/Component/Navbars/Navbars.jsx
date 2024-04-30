@@ -267,6 +267,11 @@ function NavbarNav() {
                             Careers
                           </NavLink>
                         </li>
+                        <li>
+                          <NavLink to="/contact" className="dropdown-item">
+                          Contact
+                          </NavLink>
+                        </li>
                       </ul>
                     </div>
                   </li>
@@ -275,7 +280,7 @@ function NavbarNav() {
 
               {/* submenu bar Company area end */}
 
-              <NavLink to="/contact" className="nav_text">
+              <NavLink to="/blog" className="nav_text">
                 Blog
               </NavLink>
 
