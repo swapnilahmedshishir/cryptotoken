@@ -61,26 +61,25 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   font-family: var(--font-main);
 }
 /* univarsal div */
-.univarsal_div{
-    background: #171450;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+.univarsal_div {
+  background: #171450;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
-.univarsal_text_div{
+.univarsal_text_div {
   color: var(--text-color);
   margin: 0rem 17rem;
   font-family: var(--font-main);
   padding-bottom: 2.3rem;
-
 }
-.univarsal_text_div h1{
-font-size: 3.5rem;
-font-weight: 500;
-margin-bottom: 0.7rem;
+.univarsal_text_div h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
 }
 
-.univarsal_text_div h1 span{
-color: var(--text-second-color);
+.univarsal_text_div h1 span {
+  color: var(--text-second-color);
 }
 
 .col_text_style strong span {
@@ -978,7 +977,7 @@ color: var(--text-second-color);
 /* animation image  */
 .Our-Value-section-image {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .Our-Value-section-image .bannerImage {
@@ -1061,50 +1060,50 @@ color: var(--text-second-color);
 }
 /* ========================================================================= */
 /* clinet item */
-.client_image_div{
+.client_image_div {
   padding-top: 2rem;
   text-align: center;
 }
-.client_item{  
+.client_item {
   margin-bottom: 2rem;
 }
-.client_item img{
+.client_item img {
   opacity: 0.8;
   max-width: 100%;
 }
-.client_item img:hover{
+.client_item img:hover {
   opacity: 1;
   max-width: 100%;
-  transition:opacity 0.5ms ease;
+  transition: opacity 0.5ms ease;
 }
 
 /* ========================================================================= */
 /* conatct us Section */
-.contactus_text_section{
+.contactus_text_section {
   margin-top: 2rem;
 }
-.contactus_text_div{
+.contactus_text_div {
   color: var(--text-color);
   padding-left: 3.9rem;
   padding-top: 3.1rem;
 }
 .contactus_text_heading {
-  font-family: var(--font-main); 
+  font-family: var(--font-main);
   /* padding-right: 1rem; */
   text-transform: capitalize;
   font-size: 3rem;
-font-weight: 500;
-line-height: 3.9rem;
-text-align: left;
-margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 3.9rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
 }
-.contactus_text_para{
-  font-family:var(--font-main);
+.contactus_text_para {
+  font-family: var(--font-main);
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 2rem;
   text-align: left;
-  margin-right: 6.5rem;  
+  margin-right: 6.5rem;
 }
 
 .contactus_Services {
@@ -1142,7 +1141,7 @@ margin-bottom: 1.5rem;
   margin-bottom: 0rem;
 }
 
-.contactus_Services_text p{
+.contactus_Services_text p {
   font-family: var(--text-color);
   font-size: 1rem;
   font-weight: 400;
@@ -1150,25 +1149,23 @@ margin-bottom: 1.5rem;
   text-align: left;
 }
 /* contact us form data  */
-.contactus_input_section{
-  background:#FFFFFFE5;
+.contactus_input_section {
+  background: #ffffffe5;
   padding: 2.5rem 2rem;
   margin-right: 9rem;
   margin-left: 0.5rem;
   border-radius: 2rem 0rem 2rem 0rem;
-
 }
-.contactus_input_section h3{
+.contactus_input_section h3 {
   font-family: var(--font-main);
-font-size: 24px;
-font-weight: 700;
-line-height: 32px;
-color: #01B5E8;
-margin-bottom: 1.8rem;
-
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #01b5e8;
+  margin-bottom: 1.8rem;
 }
 
-.contactus_input_fild{
+.contactus_input_fild {
   font-family: var(--font-main);
   width: 100%;
   padding: 12px 20px;
@@ -1179,9 +1176,9 @@ margin-bottom: 1.8rem;
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100%;
-  background-color:#01B5E8;
+  background-color: #01b5e8;
   color: white;
   padding: 10px 20px;
   margin: 8px 0;
@@ -1193,8 +1190,8 @@ input[type=submit] {
   cursor: pointer;
   border-radius: 1rem 0rem 1rem 0rem;
 }
-input[type=submit]:hover {
-  background-color: #01B5E8;
+input[type="submit"]:hover {
+  background-color: #01b5e8;
 }
 
 textarea {
@@ -1211,13 +1208,69 @@ textarea {
 }
 /* ========================================================================= */
 /* blog Section */
-.blog_div{
-/* background:var(--text-color) */
-color: var(--text-color);
+.blog_col_section {
+  margin-top: 2rem;
 }
-.blog_div img{
+.blog_col_section a {
+  text-decoration: none;
+}
+
+.blog_col_div_style {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 1.5rem 0rem;
+  z-index: 1;
+}
+
+.blog_div_text_style {
+  background: var(--text-color);
+  font-family: var(--font-main);
+  flex: 1;
+  padding: 0.9rem 0.9rem;
+  border-bottom-right-radius: 1.39rem;
+  transition: 0.5s ease;
+}
+.blog_div_text_style h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  color: black;
+}
+.blog_div_text_style p {
+  font-size: 1rem;
+  font-family: var(--font-main);
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  color: #101010;
+}
+
+.blog_col_div_style img {
   width: 100%;
+  border-bottom-right-radius: 4rem;
+  z-index: 1;
+  transition: 0.5s ease;
 }
+
+.blog_col_div_style:hover img {
+  transform: scale(1.04);
+  border-bottom-right-radius: 10rem;
+  border-top-left-radius: 10rem;
+  transition: 0.5s ease;
+}
+.pagination{
+  padding-top: 2rem;
+}
+.pagination button{
+  margin: 0rem 1rem;
+  padding: 0.2rem 0.5rem;
+  color: #171450;
+}
+/* ========================================================================= */
+/* blog Section */
+
 /* ========================================================================= */
 /* media query  */
 /* =========================================== */
@@ -1226,19 +1279,18 @@ color: var(--text-color);
   /* ...
 	// rules here apply to devices from 993px to 1200px (inclusive)
 	... */
-   /* univarsal div */
-   .univarsal_text_div {
+  /* univarsal div */
+  .univarsal_text_div {
     margin: 0rem 9rem;
-}
+  }
 
-/* home */
+  /* home */
   .hero_text_style p {
     padding: 0rem 7.5rem;
   }
   /* .ai_service {
     top: 39.2rem;
   } */
- 
 
   /* universal design */
   .col_image_style img {
@@ -1289,16 +1341,16 @@ color: var(--text-color);
   /* contact us page  */
   .contactus_text_div {
     padding-left: 0.9rem;
-}
-.contactus_text_heading {
-  font-size: 2.5rem;
-}
-.contactus_text_para {
-  margin-right: 2.9rem;
-}
-.contactus_input_section {
-  margin-right: 0rem;
-}
+  }
+  .contactus_text_heading {
+    font-size: 2.5rem;
+  }
+  .contactus_text_para {
+    margin-right: 2.9rem;
+  }
+  .contactus_input_section {
+    margin-right: 0rem;
+  }
 }
 @media (max-width: 992px) {
   /* ...
@@ -1307,12 +1359,12 @@ color: var(--text-color);
   /* univarsal div */
   .univarsal_text_div {
     margin: 0rem 5rem;
-}
-.univarsal_text_div h1 {
-  font-size: 4rem;
-  margin-bottom: 0.6rem;
-  text-transform: capitalize;
-}
+  }
+  .univarsal_text_div h1 {
+    font-size: 4rem;
+    margin-bottom: 0.6rem;
+    text-transform: capitalize;
+  }
   .nav_text {
     margin: 1rem 0rem;
   }
@@ -1392,11 +1444,11 @@ color: var(--text-color);
   .contactus_input_section {
     padding: 2.5rem 1.5rem;
   }
-  .contactus_text_heading{
+  .contactus_text_heading {
     font-size: 2.4rem;
     line-height: 2.9rem;
   }
-  .contactus_input_section h3{
+  .contactus_input_section h3 {
     font-size: 23px;
   }
 }
@@ -1407,11 +1459,11 @@ color: var(--text-color);
   /* univasal text */
   .univarsal_text_div {
     margin: 0rem 0rem;
-}
-.univarsal_text_div h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.6rem;
-}
+  }
+  .univarsal_text_div h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.6rem;
+  }
 
   .erro-text-fof {
     font-size: 10rem;
@@ -1552,7 +1604,7 @@ color: var(--text-color);
   .footer_box_btn {
     margin-right: 1rem;
   }
-  .footer_menu_list_style ul{
+  .footer_menu_list_style ul {
     display: block;
   }
   .footer_menu_list_style ul li {
@@ -1600,21 +1652,21 @@ color: var(--text-color);
     margin-top: 2rem;
   }
   /* contact us section */
-  .contactus_input_section{
+  .contactus_input_section {
     margin-top: 1.5rem;
     margin-left: 0rem;
   }
   .contactus_text_section {
     margin-top: 0rem;
-}
-.contactus_text_para{
-  line-height: 1.8rem;
-  margin-right: 0rem;
-  text-align: justify;
-}
-.contactus_text_div{
-  padding-top: 0rem;
-}
+  }
+  .contactus_text_para {
+    line-height: 1.8rem;
+    margin-right: 0rem;
+    text-align: justify;
+  }
+  .contactus_text_div {
+    padding-top: 0rem;
+  }
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

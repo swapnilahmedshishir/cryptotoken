@@ -269,7 +269,7 @@ function NavbarNav() {
                         </li>
                         <li>
                           <NavLink to="/contact" className="dropdown-item">
-                          Contact
+                            Contact
                           </NavLink>
                         </li>
                       </ul>
