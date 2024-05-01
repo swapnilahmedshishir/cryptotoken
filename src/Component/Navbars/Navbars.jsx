@@ -59,7 +59,7 @@ function NavbarNav() {
                             <ul>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/mangement/community-management"
                                   className="dropdown-item"
                                 >
                                   Community Management
@@ -67,7 +67,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/mangement/social-media-management"
                                   className="dropdown-item"
                                 >
                                   Social media handles management
@@ -85,7 +85,7 @@ function NavbarNav() {
                             <ul>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/marketing/seo-marketing"
                                   className="dropdown-item"
                                 >
                                   SEO Marketing
@@ -93,7 +93,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/marketing/content-marketing"
                                   className="dropdown-item"
                                 >
                                   Content Marketing
@@ -101,7 +101,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/marketing/influencer-marketing"
                                   className="dropdown-item"
                                 >
                                   Influencer Marketing
@@ -109,7 +109,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/marketing/social-media-marketing"
                                   className="dropdown-item"
                                 >
                                   Social Media Marketing
@@ -117,7 +117,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/marketing/campaign-marketing"
                                   className="dropdown-item"
                                 >
                                   Campaign Marketing
@@ -134,7 +134,7 @@ function NavbarNav() {
                             <ul>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/development/crypto-token-development"
                                   className="dropdown-item"
                                 >
                                   Crypto Token Development
@@ -142,7 +142,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/development/website-development"
                                   className="dropdown-item"
                                 >
                                   Website Development
@@ -150,7 +150,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/development/app-development"
                                   className="dropdown-item"
                                 >
                                   App Development
@@ -158,7 +158,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/development/white-paper-development"
                                   className="dropdown-item"
                                 >
                                   White Paper Development
@@ -175,7 +175,7 @@ function NavbarNav() {
                             <ul>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/design/logo-design"
                                   className="dropdown-item"
                                 >
                                   Logo Design
@@ -183,7 +183,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/design/stationery-design"
                                   className="dropdown-item"
                                 >
                                   Stationery Design
@@ -191,7 +191,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/design/social-media-design"
                                   className="dropdown-item"
                                 >
                                   Social Media Design
@@ -199,7 +199,7 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/design/e-commerce-photo-editing"
                                   className="dropdown-item"
                                 >
                                   Ecommerce Photo Editing
@@ -207,10 +207,27 @@ function NavbarNav() {
                               </li>
                               <li>
                                 <NavLink
-                                  to="/our-team"
+                                  to="/services/design/white-paper-design"
                                   className="dropdown-item"
                                 >
                                   White Paper Design
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/services/design/web-design"
+                                  className="dropdown-item"
+                                >
+                                  Web design
+                                </NavLink>
+                              </li>
+                              <li>
+                                <NavLink
+                                  to="/services/design/ui-ux-design"
+                                  className="dropdown-item"
+                                >
+                                  UI/UX design
+
                                 </NavLink>
                               </li>
                             </ul>
