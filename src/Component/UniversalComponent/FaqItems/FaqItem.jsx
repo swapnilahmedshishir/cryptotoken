@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
 
 const FaqItem = (props) => {
-    // props
-    const {title, content } = props.accordion ;
+  // props
+  const { title, content } = props.accordion;
 
-
-    // state
+  // state
   const toggleAccordion = (event) => {
     const items = document.querySelectorAll(".accordion button");
     const itemToggle = event.currentTarget.getAttribute("aria-expanded");
@@ -21,34 +20,28 @@ const FaqItem = (props) => {
 
   return (
     <>
-<div className="accordion-item">
-                  <button
-                    id="accordion-button"
-                    aria-expanded="false"
-                    onClick={toggleAccordion}
-                  >
-                    <span className="accordion-title">
-                      {title}
-                    </span>
-                    <span className="icon" aria-hidden="true"></span>
-                  </button>
-                  <div className="accordion-content">
-                    <p>
-                     {content}
-                    </p>
-                  </div>
-                </div>
+      <div className="accordion-item">
+        <button
+          id="accordion-button"
+          aria-expanded="false"
+          onClick={toggleAccordion}
+        >
+          <span className="accordion-title">{title}</span>
+          <span className="icon" aria-hidden="true"></span>
+        </button>
+        <div className="accordion-content">
+          <p>{content}</p>
+        </div>
+      </div>
     </>
-  )
-}
-
-FaqItem.propTypes = {
-    accordion: PropTypes.shape({
-        title: PropTypes.string.isRequired ,
-        content: PropTypes.string.isRequired 
-
-    } ).isRequired ,
-    
+  );
 };
 
-export default FaqItem
+FaqItem.propTypes = {
+  accordion: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default FaqItem;

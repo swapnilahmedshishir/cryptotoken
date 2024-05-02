@@ -87,14 +87,13 @@ const BlogPage = () => {
             />
           </div>
           <Pagination
-           /* Total number of items */
-  totalItems={30}
-/* Number of items per page */
-  itemsPerPage={6}
-  /* Function to handle page change */
-  onPageChange={handlePageChange}
-/>
-
+            /* Total number of items */
+            totalItems={30}
+            /* Number of items per page */
+            itemsPerPage={6}
+            /* Function to handle page change */
+            onPageChange={handlePageChange}
+          />
         </div>
       </div>
     </>

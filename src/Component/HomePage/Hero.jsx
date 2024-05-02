@@ -7,7 +7,7 @@ const Hero = () => {
   useEffect(() => {
     // Initialize Typed.js
     const typed = new Typed(".hero_multiple_text", {
-      strings: [       
+      strings: [
         "startups",
         "small businesses",
         "B2B companies",

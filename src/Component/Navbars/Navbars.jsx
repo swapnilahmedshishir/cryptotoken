@@ -227,7 +227,6 @@ function NavbarNav() {
                                   className="dropdown-item"
                                 >
                                   UI/UX design
-
                                 </NavLink>
                               </li>
                             </ul>
@@ -235,13 +234,13 @@ function NavbarNav() {
                         </li>
 
                         <li>
-                          <NavLink to="/listing" className="dropdown-item">
+                          <NavLink to="/services/listing" className="dropdown-item">
                             Listing
                           </NavLink>
                         </li>
 
                         <li>
-                          <NavLink to="/listing" className="dropdown-item">
+                          <NavLink to="/services/package" className="dropdown-item">
                             Package
                           </NavLink>
                         </li>

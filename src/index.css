@@ -104,20 +104,13 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /* Navbar nav style  */
 /* ========================================================================= */
 .navbar-nav {
-  /* margin-left: 1rem; */
-  margin-bottom: 1rem;
   --bs-nav-link-color: var(--text-color) !important;
 }
-.navbar-brand {
-  margin-right: 3.1 rem !important;
-}
-
 .nav_text {
   font-family: var(--font-main);
-  font-size: 1rem;
-  font-weight: 400 !important;
+  font-size: 1.09rem;
+  font-weight: 500 !important;
   margin-right: 0.9rem;
-  line-height: 1rem;
   color: var(--text-color);
   text-decoration: none;
   padding-right: 10px;
@@ -128,32 +121,28 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .active {
   color: var(--text-second-color);
 }
-.dropdown_menu_text {
-  margin-top: 9px;
-}
 .navbar-toggler {
-  background-color: #18c8ff;
+  background-color: var(--text-color);
+  border-radius: 0.8rem 0rem 0.8rem 0rem;
+  border: none;
+  outline: none;
 }
-
 /* submenu bar style  */
-.services {
-  cursor: pointer;
-}
-
 .menu_bar ul {
   list-style: none;
   display: flex;
   margin-bottom: 0rem;
   padding-left: 0rem;
-}
-.menu_bar ul li {
-  /* padding: 0px 8px; */
   position: relative;
 }
+.menu_bar ul li {
+  cursor: pointer;
+}
 .icon_bar {
-  margin-top: -3px;
+  margin-top: -2px;
   font-size: 1.2rem;
 }
+
 .dropdown_menu {
   display: none;
 }
@@ -163,7 +152,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   display: block;
   position: absolute;
   left: -15px;
-  top: 110%;
+  top: 100%;
   padding: 1.6rem;
   z-index: 1;
 }
@@ -192,25 +181,18 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   padding-bottom: 0rem;
 }
 
-.fas {
-  float: right;
-  margin-left: 0.9rem;
-  padding-top: 0.1rem;
-  font-size: 1.5rem;
-}
-
 .dropdown_submenu {
   display: none;
+  position: absolute;
+  top: -9px;
+  left: 100%;
+  background-color: var(--bg-color);
+  padding: 0rem 2.5rem 2rem;
+  z-index: 1;
 }
 
 .dropdown_menu ul li:hover .dropdown_submenu {
   display: block;
-  position: absolute;
-  top: 0.1rem;
-  left: 9.5rem;
-  background-color: var(--bg-color);
-  padding: 0rem 2.5rem 2rem;
-  z-index: 1;
 }
 
 .dropdown_menu ul li:hover .dropdown_submenu ul li {
@@ -221,7 +203,14 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   font-family: var(--font-main);
   font-size: 1rem;
   text-align: left;
-  padding: 0.8rem 0rem;
+  padding: 0.1rem 0rem;
+}
+
+.fas {
+  float: right;
+  margin-left: 0.9rem;
+  padding-top: 0.1rem;
+  font-size: 1.5rem;
 }
 /* comapny dropdown maneu style */
 .menu_bar ul li:hover .comapny_dropdown_menu ul li {
@@ -424,7 +413,6 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   margin-right: 0.7rem;
 }
 .border_style {
-  /* margin-top: 1rem; */
   width: 170px;
   border-bottom: 3px solid var(--text-color);
 }
@@ -437,18 +425,18 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /* animation image  */
 .animation-image {
   position: relative;
-  overflow: hidden; /* Ensure image stays within its container */
+  overflow: hidden;
 }
 
 .animation-image img {
   display: block;
   width: 85%;
   height: auto;
-  transition: transform 0.3s ease; /* Smooth transition for animation */
+  transition: transform 0.3s ease;
 }
 
 .mouse-move-animation {
-  transition: transform 0.3s ease; /* Smooth transition for animation */
+  transition: transform 0.3s ease;
 }
 
 /* Key Features */
@@ -480,10 +468,7 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /*  Our service section  */
 .Our_service_div {
   background-image: url(/Images/banner/pattern2.png);
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -575,11 +560,9 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .team_col_style {
   flex: 1;
   display: flex;
-  /* justify-content: center; */
   align-items: stretch;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
   margin: 0 1rem;
   transition: 0.5s ease;
 }
@@ -740,13 +723,13 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /* animation image  */
 .faq_row_style {
   position: relative;
-  overflow: hidden; /* Ensure image stays within its container */
+  overflow: hidden;
 }
 
 .faq_row_style img {
   display: block;
   margin-top: 2rem;
-  transition: transform 0.3s ease; /* Smooth transition for animation */
+  transition: transform 0.3s ease;
 }
 
 .mouse-move-animation {
@@ -887,7 +870,6 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 .footer_social_media a:hover {
   background: var(--text-color);
   color: var(--bg-color);
-  /* box-shadow: 0 0 1rem var(--bg-color); */
 }
 .footer_horizontal {
   border: 1px solid #ffffff59;
@@ -930,18 +912,18 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 /* animation image  */
 .Who-We-Are-section-image {
   position: relative;
-  overflow: hidden; /* Ensure image stays within its container */
+  overflow: hidden;
 }
 
 .Who-We-Are-section-image img {
   display: block;
   width: 85%;
   height: auto;
-  transition: transform 0.9s ease; /* Smooth transition for animation */
+  transition: transform 0.9s ease;
 }
 
 .mouse-move-animation {
-  transition: transform 0.3s ease; /* Smooth transition for animation */
+  transition: transform 0.3s ease;
 }
 .Who_We_Are_text_div {
   display: flex;
@@ -984,11 +966,11 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   display: block;
   width: 85%;
   height: auto;
-  transition: transform 1s ease; /* Smooth transition for animation */
+  transition: transform 1s ease;
 }
 
 .mouse-move-animation {
-  transition: transform 0.3s ease; /* Smooth transition for animation */
+  transition: transform 0.3s ease;
 }
 
 .Our_Value_text_heading {
@@ -1089,7 +1071,6 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
 }
 .contactus_text_heading {
   font-family: var(--font-main);
-  /* padding-right: 1rem; */
   text-transform: capitalize;
   font-size: 3rem;
   font-weight: 500;
@@ -1260,10 +1241,10 @@ textarea {
   border-top-left-radius: 10rem;
   transition: 0.5s ease;
 }
-.pagination{
+.pagination {
   padding-top: 2rem;
 }
-.pagination button{
+.pagination button {
   margin: 0rem 1rem;
   padding: 0.2rem 0.5rem;
   color: #171450;
@@ -1271,16 +1252,16 @@ textarea {
 /* ========================================================================= */
 /* services componet Section */
 /* animation image  */
-.services_text{
-color:var(--text-color);
-text-align:left;
+.services_text {
+  color: var(--text-color);
+  text-align: left;
 }
-.services_text ul li{
-margin-bottom: 0.9rem;
+.services_text ul li {
+  margin-bottom: 0.9rem;
 }
-.servicesComponent_section_image{
+.servicesComponent_section_image {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   padding-top: 2rem;
   padding-bottom: 3.5rem;
 }
@@ -1289,11 +1270,11 @@ margin-bottom: 0.9rem;
   display: block;
   width: 85%;
   height: auto;
-  transition: transform 0.9s ease; /* Smooth transition for animation */
+  transition: transform 0.9s ease;
 }
 
 .mouse-move-animation {
-  transition: transform 0.3s ease; /* Smooth transition for animation */
+  transition: transform 0.3s ease;
 }
 
 .servicesComponent_text_heading {
@@ -1306,7 +1287,7 @@ margin-bottom: 0.9rem;
   text-transform: capitalize;
   color: var(--text-color);
 }
-.servicesComponent_text_para{
+.servicesComponent_text_para {
   text-align: left;
 }
 
@@ -1348,7 +1329,6 @@ margin-bottom: 0.9rem;
   /* team */
   .team_col_text_style {
     margin: 0rem 0rem;
-    /* margin-bottom: 2rem; */
     padding: 1.7rem 1.7rem;
   }
   /* faq */
@@ -1711,7 +1691,7 @@ margin-bottom: 0.9rem;
     padding-top: 0rem;
   }
   /* services */
-  .servicesComponent_section_image{
+  .servicesComponent_section_image {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
   }
@@ -1720,23 +1700,16 @@ margin-bottom: 0.9rem;
     font-size: 2.2rem;
     line-height: 2.3rem;
   }
-  .services_text ul{
+  .services_text ul {
     margin-left: 1.5rem;
   }
-  .services_text ul li{
+  .services_text ul li {
     margin-bottom: 0.9rem;
   }
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* =========================================== */
 /* Mobile-First Media Queries */
-@media (min-width: 768px) {
-  /* ...
-	// rules here apply to devices from from 768px to 991px (inclusive)
-	... */
-}
 @media (min-width: 992px) {
   /* ...
 	// rules here apply to devices from 992px to 1199px (inclusive)

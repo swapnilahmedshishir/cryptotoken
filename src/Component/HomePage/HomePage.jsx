@@ -20,7 +20,7 @@ const HomePage = () => {
       <TeamMeet />
       {/* faq  */}
       <Faq />
-      {/* faq  */}      
+      {/* faq  */}
     </>
   );
 };

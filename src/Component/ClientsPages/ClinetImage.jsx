@@ -11,7 +11,7 @@ const ClinetImage = ({ imgName }) => {
 };
 
 ClinetImage.propTypes = {
-    imgName: PropTypes.string.isRequired // Change `propTypes` to `PropTypes`
+  imgName: PropTypes.string.isRequired, // Change `propTypes` to `PropTypes`
 };
 
 export default ClinetImage;

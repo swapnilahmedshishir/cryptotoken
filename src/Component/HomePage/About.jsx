@@ -1,36 +1,36 @@
 import { useEffect } from "react";
 
 const About = () => {
-    useEffect(() => {
-        const container = document.querySelector(".animation-image");
-        const image = container.querySelector("img");
-        //   mousemove event handler
-        const handleMouseMove = (e) => {
-          const x = (e.clientX - container.offsetLeft) / container.offsetWidth;
-          const y = (e.clientY - container.offsetTop) / container.offsetHeight;
-    
-          const moveX = (x - 0.5) * 30; // Adjust the multiplier for desired movement range
-          const moveY = (y - 0.5) * 30; // Adjust the multiplier for desired movement range
-    
-          image.style.transform = `translate(${moveX}px, ${moveY}px)`;
-        };
-    
-        const handleMouseLeave = () => {
-          image.style.transform = "none"; // Reset image position when mouse leaves the container
-        };
-    
-        container.addEventListener("mousemove", handleMouseMove);
-        container.addEventListener("mouseleave", handleMouseLeave);
-    
-        // Cleanup function to remove event listeners when component unmounts
-        return () => {
-          container.removeEventListener("mousemove", handleMouseMove);
-          container.removeEventListener("mouseleave", handleMouseLeave);
-        };
-      }, []);
+  useEffect(() => {
+    const container = document.querySelector(".animation-image");
+    const image = container.querySelector("img");
+    //   mousemove event handler
+    const handleMouseMove = (e) => {
+      const x = (e.clientX - container.offsetLeft) / container.offsetWidth;
+      const y = (e.clientY - container.offsetTop) / container.offsetHeight;
+
+      const moveX = (x - 0.5) * 30; // Adjust the multiplier for desired movement range
+      const moveY = (y - 0.5) * 30; // Adjust the multiplier for desired movement range
+
+      image.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    };
+
+    const handleMouseLeave = () => {
+      image.style.transform = "none"; // Reset image position when mouse leaves the container
+    };
+
+    container.addEventListener("mousemove", handleMouseMove);
+    container.addEventListener("mouseleave", handleMouseLeave);
+
+    // Cleanup function to remove event listeners when component unmounts
+    return () => {
+      container.removeEventListener("mousemove", handleMouseMove);
+      container.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
   return (
     <>
-       {/* ================================================================================
+      {/* ================================================================================
                   about section 
 =========================================================================== */}
       <div className="about_div animation-image">
@@ -62,9 +62,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,6 +1,6 @@
-import  { useState } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import PropTypes from 'prop-types';
+import { useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 const Pagination = ({ totalItems, itemsPerPage, onPageChange }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -51,7 +51,7 @@ const Pagination = ({ totalItems, itemsPerPage, onPageChange }) => {
   };
 
   return (
-    <div className='pagination'>
+    <div className="pagination">
       {renderPrevArrow()}
       {renderPageNumbers()}
       {renderNextArrow()}
