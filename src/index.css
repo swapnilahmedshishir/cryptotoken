@@ -229,6 +229,15 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   border: 1px;
   color: var(--text-color);
 }
+.contactBtn:hover {
+  background: linear-gradient(
+    175deg,
+    #34c9f7 14.89%,
+    rgba(193, 21, 245, 0.79) 85.85%
+  );
+  color: var(--bg-color);
+  transition: all 0.4s ease;
+}
 /* ========================================================================= */
 /* Erro Page  */
 .erro_page_div {
@@ -628,6 +637,73 @@ background: linear-gradient(266.34deg, #8429F8 15.69%, #060044 86.54%);
   background: var(--text-color);
   color: var(--bg-color);
   box-shadow: 0 0 1rem var(--bg-color);
+}
+
+/* ========================================================================= */
+/* career section start  */
+.job {
+}
+.career_para_text {
+  padding: 0.2rem 0rem !important;
+}
+.job_section {
+  padding-top: 3.5rem;
+  padding-top: 3rem;
+}
+.job_section_div {
+  background: var(--text-color);
+  padding: 1.5rem 2rem;
+  margin: 2.5rem 4rem;
+  border-radius: 1rem 0rem 1rem 0rem;
+}
+.job_section_list {
+  margin-top: 0.5rem;
+}
+.job_section_list ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.job_section_list ul li {
+  text-decoration: none;
+  margin-left: 7rem;
+}
+.job_item {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+.job_section_list ul li:first-child {
+  margin-left: 0rem;
+}
+.job_title {
+  margin-right: 15rem;
+  font-family: var(--font-main);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+}
+.apply_btn {
+  font-family: var(--font-main);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.3rem 1.9rem;
+}
+.apply_btn:hover {
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
+  color: var(--text-color);
+  transition: all 0.5s ease;
 }
 
 /* ========================================================================= */
@@ -1276,7 +1352,6 @@ textarea {
 .mouse-move-animation {
   transition: transform 0.3s ease;
 }
-
 .servicesComponent_text_heading {
   font-family: var(--font-main);
   font-size: 3rem;
@@ -1290,7 +1365,215 @@ textarea {
 .servicesComponent_text_para {
   text-align: left;
 }
+/* ===============================================================*/
+/* package management system */
+.package_col_style {
+  transition: 0.5s ease;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
 
+.package_col_div_style {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.package_col_text_style {
+  background: #060044;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  margin: 0px 1rem;
+  border-radius: 1rem;
+  font-family: var(--font-main);
+  color: var(--text-color);
+  box-shadow: #ffffff59 0px 2px 5px, var(--text-color) 0px 2px 5px -3px;
+  flex: 1;
+  transition: 0.5s ease;
+  border: 2px solid transparent;
+}
+
+.package_col_text_style:hover {
+  transform: scale(1.03);
+  border: 3px solid;
+  border-image: linear-gradient(
+    88deg,
+    #01b5e8 -11.16%,
+    #7752fe 46.95%,
+    #732bf7 94.89%
+  );
+  transition: 0.4s ease;
+  border-image-slice: 1;
+  border-radius: 0rem;
+  box-shadow: none;
+}
+
+.plan_text_div {
+  border-radius: 0.5rem;
+  padding: 0.375rem 1.4rem;
+  background: #01b5e8;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+.section_hour {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.section_txt {
+  font-size: 1.375rem;
+  line-height: 1.3;
+  color: #c0c0c0;
+}
+.package_col_text_style .section_border {
+  width: 150px;
+  margin: 2rem auto;
+  border: 1px solid #ffffff59;
+  line-height: 5rem;
+}
+.section_price span:first-child {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.section_price span {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.package_col_text_style:hover span {
+  background-image: linear-gradient(90deg, #01b5e8 0%, #7752fe 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-fill-color: transparent;
+  transition: 0.5s ease;
+}
+
+.section_usd {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  padding-bottom: 2.5rem;
+}
+.section_btn .btn {
+  border: none;
+  position: relative;
+  border-radius: 0.5rem;
+  background: none;
+  padding: 0;
+  border: none;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.section_btn .btn:before {
+  content: "";
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  border: 2px solid;
+  background: linear-gradient(
+      88deg,
+      #01b5e8 -11.16%,
+      #7752fe 46.95%,
+      #732bf7 94.89%
+    )
+    border-box;
+  -webkit-mask: linear-gradient(
+        88deg,
+        #01b5e8 -11.16%,
+        #7752fe 46.95%,
+        #732bf7 94.89%
+      )
+      padding-box,
+    linear-gradient(88deg, #01b5e8 -11.16%, #7752fe 46.95%, #732bf7 94.89%);
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: 1;
+}
+
+.section_btn .btn:hover {
+  background: linear-gradient(
+      110deg,
+      #01b5e8 -11.16%,
+      #7752fe 46.95%,
+      #732bf7 94.89%
+    )
+    border-box;
+  -webkit-mask: linear-gradient(
+        110deg,
+        #01b5e8 -11.16%,
+        #7752fe 46.95%,
+        #732bf7 94.89%
+      )
+      padding-box,
+    linear-gradient(110deg, #01b5e8 -11.16%, #7752fe 46.95%, #732bf7 94.89%);
+}
+.section_btn .btn span {
+  display: block;
+  background: none;
+  z-index: 1;
+  padding: 0.9rem 2.9rem;
+  border: none;
+  border-radius: 0.625rem;
+  margin: 1px;
+  position: relative;
+  z-index: 2;
+  color: var(--text-color);
+}
+
+.fill-btn_gradient {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3019;
+  letter-spacing: -0.01em;
+}
+/* secend package style */
+.plan_text_div2 {
+  background: linear-gradient(90deg, #01b5e8 0%, #7752fe 100%);
+}
+.section_price2 {
+  background-image: linear-gradient(90deg, #01b5e8 0%, #7752fe 100%);
+  -webkit-background-clip: text; /* Safari/Chrome only */
+  color: transparent;
+  text-fill-color: transparent;
+}
+
+.section_btn2 .btn {
+  background: linear-gradient(
+      110deg,
+      #01b5e8 -11.16%,
+      #7752fe 46.95%,
+      #732bf7 94.89%
+    )
+    border-box;
+  -webkit-mask: linear-gradient(
+        110deg,
+        #01b5e8 -11.16%,
+        #7752fe 46.95%,
+        #732bf7 94.89%
+      )
+      padding-box,
+    linear-gradient(110deg, #01b5e8 -11.16%, #7752fe 46.95%, #732bf7 94.89%);
+}
+.plan_text_div3 {
+  background: #7752fe;
+}
 /* ========================================================================= */
 /* media query  */
 /* =========================================== */
@@ -1302,6 +1585,14 @@ textarea {
   /* univarsal div */
   .univarsal_text_div {
     margin: 0rem 9rem;
+  }
+  /* caree */
+  .job_title {
+    margin-right: 0rem;
+  }
+  .job_section_list ul li {
+    text-decoration: none;
+    margin-left: 5rem;
   }
 
   /* home */
@@ -1370,6 +1661,12 @@ textarea {
   .contactus_input_section {
     margin-right: 0rem;
   }
+  /* package section */
+
+  .package_col_text_style {
+    padding: 2.5rem 0.5rem;
+    margin: 0px 0.3rem;
+  }
 }
 @media (max-width: 992px) {
   /* ...
@@ -1384,6 +1681,17 @@ textarea {
     margin-bottom: 0.6rem;
     text-transform: capitalize;
   }
+  /* caree */
+  .job_section_list ul li {
+    margin-left: 3rem;
+  }
+  .job_section_div {
+    background: var(--text-color);
+    padding: 1.5rem 1.5rem;
+    margin: 1.5rem 0rem;
+  }
+
+  /* navbar */
   .nav_text {
     margin: 1rem 0rem;
   }
@@ -1486,6 +1794,25 @@ textarea {
   .univarsal_text_div h1 {
     font-size: 2.5rem;
     margin-bottom: 0.6rem;
+  }
+
+  /* caree */
+  .job_section_list {
+    text-align: center;
+  }
+
+  .job_section_list ul {
+    display: inline-block;
+  }
+  .job_section_list ul li {
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .job_section_div {
+    background: var(--text-color);
+    padding: 1.5rem 0.5rem;
+    margin: 1.5rem 0rem;
   }
 
   .erro-text-fof {
@@ -1706,7 +2033,12 @@ textarea {
   .services_text ul li {
     margin-bottom: 0.9rem;
   }
+  /* package */
+  .package_col_text_style {
+    margin: 0px 1.5rem;
+  }
 }
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* Mobile-First Media Queries */
@@ -1718,7 +2050,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
     margin-left: 2rem;
   }
   .contactBtn {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+  }
+  .contactBtn {
+    padding: 3px 20px;
   }
 }
 @media (min-width: 1200px) {

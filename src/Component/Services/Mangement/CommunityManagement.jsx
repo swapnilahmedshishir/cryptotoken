@@ -19,7 +19,7 @@ const CommunityManagement = () => {
             services={{
               img: "Tojo images-04.png",
               title: "Community Management ",
-              text: "Empower Your Community with TOJO Global &#39;s Expert Management. We are your Trusted Partner for Comprehensive Community Management Solutions.",
+              text: "Empower Your Community with TOJO Global's Expert Management. We are your Trusted Partner for Comprehensive Community Management Solutions.",
             }}
           />
 

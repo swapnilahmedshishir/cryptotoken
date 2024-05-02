@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeroText from "../../UniversalComponent/HeroText/HeroText";
 
 const Package = () => {
@@ -16,40 +17,78 @@ const Package = () => {
 
           {/* package plan text */}
           <div>
-          <div className="row">
-            <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_div_style">
-                <div>
-
+            <div className="row">
+              <div className="col-sm-12 col-md-6 col-lg-4 package_col_style">
+                <div className="package_col_div_style">
+                  <div className="package_col_text_style">
+                    <p className="plan_text_div">STARTER PLAN</p>
+                    <h2 className="section_hour">40 Hours</h2>
+                    <p className="section_txt">1-2 regular task</p>
+                    <div className="section_border"></div>
+                    <p className="section_price">
+                      <span>$3200</span>
+                      <span>/Month</span>
+                    </p>
+                    <p className="section_usd">$80 per hour</p>
+                    <div className="section_btn">
+                      <Link
+                        to=""
+                        className="btn fill-btn_gradient fill-btn_gradient-pink"
+                      >
+                        <span>Choose Plan</span>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-                
               </div>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_div_style">
-                <div>
-                  
+              <div className="col-sm-12 col-md-6 col-lg-4 package_col_style">
+                <div className="package_col_div_style">
+                  <div className="package_col_text_style">
+                    <p className="plan_text_div plan_text_div2">FORCE PLAN</p>
+                    <h2 className="section_hour">160 Hours</h2>
+                    <p className="section_txt">Full Marketing Department</p>
+                    <div className="section_border"></div>
+                    <p className="section_price section_price2">
+                      <span>$9600</span>
+                      <span>/Month</span>
+                    </p>
+                    <p className="section_usd">$60 per hour</p>
+                    <div className="section_btn section_btn2">
+                      <Link
+                        to=""
+                        className="btn fill-btn_gradient fill-btn_gradient-pink"
+                      >
+                        <span>Choose Plan</span>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-                
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4 package_col_style">
+                <div className="package_col_div_style">
+                  <div className="package_col_text_style">
+                    <p className="plan_text_div plan_text_div3">BOOST PLAN</p>
+                    <h2 className="section_hour">80 Hours</h2>
+                    <p className="section_txt">3-4 regular task</p>
+                    <div className="section_border"></div>
+                    <p className="section_price">
+                      <span>$5600</span>
+                      <span>/Month</span>
+                    </p>
+                    <p className="section_usd">$70 per hour</p>
+                    <div className="section_btn">
+                      <Link
+                        to=""
+                        className="btn fill-btn_gradient fill-btn_gradient-pink"
+                      >
+                        <span>Choose Plan</span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div className="col-sm-12 col-md-6 col-lg-4 services_col_style">
-              <div className="services_col_div_style">
-                
-               <div>
-
-               </div>
-              </div>
-            </div>
-
-           
-            
-
-            
           </div>
-          </div>
-        
         </div>
       </div>
     </>
