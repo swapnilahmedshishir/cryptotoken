@@ -18,7 +18,8 @@ const WhitePaperDesign = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-19.png",
-              title: "White Paper Design",
+              title1: "White Paper",
+              title2: "Design",
               text: "Unlock market influence with TOJO Global's expertly crafted white papers. Elevate your brand and captivate audiences with compelling insights and design  ",
             }}
           />

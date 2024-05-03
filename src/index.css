@@ -1352,16 +1352,81 @@ textarea {
 .mouse-move-animation {
   transition: transform 0.3s ease;
 }
-.servicesComponent_text_heading {
-  font-family: var(--font-main);
+
+.servicesComponent_text_heading h4:nth-child(1) {
+  background: linear-gradient(88deg, #01B5E8, #7752FE, #732bf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Fira Code', monospace;  
   font-size: 3rem;
-  font-weight: 600;
-  line-height: 3.5rem;
-  padding-left: 0rem;
-  padding-right: 5rem;
-  text-transform: capitalize;
-  color: var(--text-color);
+  font-weight: 500;
+  margin: 0 0 0 25%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 390px;
+  animation: type 2s steps(40,end) forwards;
+  padding-bottom: 0.3rem;
 }
+
+.servicesComponent_text_heading h4:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto;
+  background: linear-gradient(to left, #f8b195, #f67280, #c06c84);  
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  width: 460px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 430px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
 .servicesComponent_text_para {
   text-align: left;
 }
@@ -1586,6 +1651,14 @@ textarea {
   .univarsal_text_div {
     margin: 0rem 9rem;
   }
+  .servicesComponent_text_heading h4:nth-child(1) {
+    font-size: 2.8rem;
+    margin: 0 0 0 21%;
+}
+  .servicesComponent_text_heading h4:nth-child(2) {    
+    font-size: 2.8rem;   
+    width: 445px;
+}
   /* caree */
   .job_title {
     margin-right: 0rem;
@@ -1779,9 +1852,15 @@ textarea {
     font-size: 23px;
   }
   /* services */
-  .servicesComponent_text_heading {
-    padding-right: 0rem;
-  }
+  .servicesComponent_text_heading h4:nth-child(1) {
+    font-size: 2.6rem;
+    margin: 0 0 0 10%;
+}
+  .servicesComponent_text_heading h4:nth-child(2) {    
+    font-size: 2rem;
+    width: 330px;
+}
+ 
 }
 @media (max-width: 768px) {
   /* ...
@@ -2022,11 +2101,18 @@ textarea {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
   }
-  .servicesComponent_text_heading {
-    padding-right: 0rem;
-    font-size: 2.2rem;
-    line-height: 2.3rem;
-  }
+
+  .servicesComponent_text_heading h4:nth-child(1) {
+    font-size: 2rem;
+    margin: 0 0 0 10%;
+    width: 230px;
+}
+
+  .servicesComponent_text_heading h4:nth-child(2) {    
+    font-size: 2rem;
+    width: 300px;
+}
+  
   .services_text ul {
     margin-left: 1.5rem;
   }

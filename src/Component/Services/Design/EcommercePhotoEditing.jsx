@@ -18,7 +18,8 @@ const EcommercePhotoEditing = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-25.png",
-              title: "E-commerce Photo Editing",
+              title1: "E-commerce",
+              title2: "Photo Editing",
               text: "Convert browsers into buyers with stunning product photos. TOJO Global's E-commerce Photo Editing elevates your online store, boosting conversions and sales. Get started today!",
             }}
           />

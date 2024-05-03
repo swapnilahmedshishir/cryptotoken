@@ -18,7 +18,8 @@ const SocialMediaDesign = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-23.png",
-              title: "Social Media Design",
+              title1: "Social Media",
+              title2: "Design",
               text: "Get professional Social Media Design Services from TOJO Global to change the look of your online business. In the digital sphere, captivate your audience, encourage interaction, and make a statement.",
             }}
           />

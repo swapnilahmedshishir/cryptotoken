@@ -18,7 +18,8 @@ const Content = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-07.png",
-              title: "Content Marketing",
+              title1: "Content",
+              title2: "Marketing",
               text: "At TOJO Global, our specialty is using strategic content marketing to elevate your brand. boost your brand with our expert content marketing solutions.",
             }}
           />

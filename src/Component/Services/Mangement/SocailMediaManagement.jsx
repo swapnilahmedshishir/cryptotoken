@@ -18,7 +18,8 @@ const SocailMediaManagement = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-05.png",
-              title: "Social Media handle Management",
+              title1: "Social Media",
+              title2: "Handle Management",
               text: "Maximize Your Online Influence with TOJO Global's Social Media Handle Management and unleash your brand potential. ",
             }}
           />

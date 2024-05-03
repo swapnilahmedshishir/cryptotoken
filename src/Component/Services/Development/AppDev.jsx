@@ -18,7 +18,8 @@ const AppDev = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-13.png",
-              title: "App Development",
+              title1: "App",
+              title2: "Development",
               text: "Achieve every opportunity for growth with our creative mobile app development services. On any platform, reach and interact with audiences. ",
             }}
           />

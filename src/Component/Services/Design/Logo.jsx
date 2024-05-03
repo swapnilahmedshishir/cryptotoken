@@ -18,7 +18,8 @@ const Logo = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-22.png",
-              title: "Logo Design",
+              title1: "Logo",
+              title2: "Design",
               text: "Transform your brand identity with TOJO Global's expert logo design services. Craft memorable logos that set your business apart and resonate with your audience.",
             }}
           />

@@ -18,7 +18,8 @@ const SocialMedia = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-26.png",
-              title: "Social Media Marketing",
+              title1: "Social Media",
+              title2: "Marketing",
               text: "Spark Your Growth, With the Help of Our Social Media Marketing service. A comprehensive social media marketing strategy that engages your target audience and supports your long-term goals can help you get off to a great start for your brand.",
             }}
           />

@@ -18,7 +18,8 @@ const WhitePaper = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-14.png",
-              title: "White Paper Development",
+              title1: "White Paper ",
+              title2: "Development",
               text: "TOJO Global can help you write compelling white papers by delving deep into industry insights, solutions, and experience. These documents will show that you are a thought leader and help your business grow. ",
             }}
           />

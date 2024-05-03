@@ -18,7 +18,8 @@ const Stationery = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-16.png",
-              title: "Stationery Design",
+              title1: "Stationery",
+              title2: "Design",
               text: "Elevate your brand's professionalism and consistency with custom stationery designs by TOJO Global. Leave a lasting impression on clients and customers while reinforcing your brand identity.",
             }}
           />

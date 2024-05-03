@@ -18,7 +18,8 @@ const SeoMarketing = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-06.png",
-              title: "SEO Marketing",
+              title1: "SEO",
+              title2: "Marketing",
               text: "Use our innovative SEO services to unlock the power of organic search results. Our business can assist you in employing one of the most effective marketing methods available to you to appear in search results and get discovered by potential clients. ",
             }}
           />

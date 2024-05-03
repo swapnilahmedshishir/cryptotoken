@@ -18,7 +18,8 @@ const Influencer = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-08.png",
-              title: "Influencer Marketing",
+              title1: "Influencer",
+              title2: "Marketing",
               text: "Take advantage of innovative influencer marketing strategies to connect and interact with your target audience.",
             }}
           />

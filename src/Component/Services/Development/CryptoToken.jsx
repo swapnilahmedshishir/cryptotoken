@@ -18,7 +18,8 @@ const CryptoToken = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-11.png",
-              title: "Crypto Token Development",
+              title1: "Crypto Token",
+              title2: "Development",
               text: "Build Your Future: Custom Crypto Token Solutions from TOJO Global. Embark on your journey to success with TOJO Global's specialized crypto token development services.",
             }}
           />

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const ServicesComponent = (props) => {
   // props
-  const { img, title, text } = props.services;
+  const { img, title1, title2, text } = props.services;
   useEffect(() => {
     const container = document.querySelector(
       ".servicesComponent_section_image"
@@ -48,8 +48,10 @@ const ServicesComponent = (props) => {
             </div>
 
             <div className="col-sm-12 col-md-6 about_col_text_style col_text_style">
-              <h2 className="servicesComponent_text_heading">{title}</h2>
-
+            <div className="servicesComponent_text_heading">
+                <h4>{title1}</h4>
+                <h4>{title2}</h4>
+                </div>
               <p className="servicesComponent_text_para">{text}</p>
             </div>
           </div>
@@ -61,7 +63,8 @@ const ServicesComponent = (props) => {
 ServicesComponent.propTypes = {
   services: PropTypes.shape({
     img: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
+    title1: PropTypes.string.isRequired,
+    title2: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
   }).isRequired,
 };

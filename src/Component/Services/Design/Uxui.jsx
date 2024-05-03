@@ -18,7 +18,8 @@ const UxUi = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-21.png",
-              title: "UI/UX design              ",
+              title1: "UI/UX",
+              title2: "Design",
               text: "Crafting user-friendly digital experiences for business growth. Elevating user satisfaction through expert UI/UX design at TOJO Global.              ",
             }}
           />

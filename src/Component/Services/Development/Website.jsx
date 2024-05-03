@@ -18,7 +18,8 @@ const Website = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-12.png",
-              title: "Website Development",
+              title1: "Website",
+              title2: "Development",
               text: "Customized web development services that transform your needs into solutions. Give your company a user-friendly website that helps you communicate with your customers. Being a complete website development firm, we provide customized solutions that broaden your audience. ",
             }}
           />

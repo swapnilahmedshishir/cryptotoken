@@ -18,7 +18,8 @@ const WebDesign = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-20.png",
-              title: "Web Design",
+              title1: "Web",
+              title2: "Design",
               text: "Get advantage of data-driven web design services,for attractive, extremely useful, and well-ranked websites that increase sales.              ",
             }}
           />

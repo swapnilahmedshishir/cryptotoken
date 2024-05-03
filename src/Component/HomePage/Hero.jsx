@@ -37,9 +37,9 @@ const Hero = () => {
                 maximum potential and growth
               </h1>
               <p>
-                Wellcome to TOJO Global! We specialize in providing professional
-                services of marketing, Management, designing,
-                developments,listing and many more for{" "}
+                Welcome to TOJO Global We specialize in providing professional
+                services of marketing, management, designing,
+                developments, listing and many more for{" "}
                 <span className="hero_multiple_text"></span>
                 <br />
                 Let&#39;s work together to move your company forward.

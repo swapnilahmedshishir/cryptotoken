@@ -18,7 +18,8 @@ const CommunityManagement = () => {
           <ServicesComponent
             services={{
               img: "Tojo images-04.png",
-              title: "Community Management ",
+              title1: "Community",
+              title2: "Management ",
               text: "Empower Your Community with TOJO Global's Expert Management. We are your Trusted Partner for Comprehensive Community Management Solutions.",
             }}
           />
