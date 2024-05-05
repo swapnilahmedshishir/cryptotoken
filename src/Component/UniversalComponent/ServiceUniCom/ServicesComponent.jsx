@@ -48,10 +48,7 @@ const ServicesComponent = (props) => {
             </div>
 
             <div className="col-sm-12 col-md-6 about_col_text_style col_text_style">
-            <div className="servicesComponent_text_heading">
-                <h4>{title1}</h4>
-                <h4>{title2}</h4>
-                </div>
+            <h2 className="servicesComponent_text_heading">{`${title1} ${title2}`}</h2>
               <p className="servicesComponent_text_para">{text}</p>
             </div>
           </div>

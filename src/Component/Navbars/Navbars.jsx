@@ -3,9 +3,11 @@ import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import Typed from "typed.js";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function NavbarNav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   useEffect(() => {
     // Initialize Typed.js
     const typed = new Typed(".multiple_text", {
@@ -22,6 +24,34 @@ function NavbarNav() {
     };
   }, []);
 
+  // useEffect(() => {
+  //   // Function to handle click events on the document
+  //   const handleClickOutsideNavbar = (event) => {
+  //     // Check if the clicked element is outside the Navbar
+  //     if (!event.target.closest('.navbar')) {
+  //       // Collapse the Navbar if it's open
+  //       const navbarCollapse = document.querySelector('.navbar .collapse');
+  //       if (navbarCollapse.classList.contains('show')) {
+  //         navbarCollapse.classList.remove('show');
+  //       }
+  //     }
+  //   };
+
+  //   // Add event listener for click events on the document
+  //   document.addEventListener('click', handleClickOutsideNavbar);
+
+  //   // Cleanup function to remove event listener when component unmounts
+  //   return () => {
+  //     document.removeEventListener('click', handleClickOutsideNavbar);
+  //   };
+  // }, []);
+  
+  const handleNavLinkClick = () => {
+    setIsMenuOpen(false); // Close the menu when a nav link is clicked
+  };
+  
+  const navbarCollapseClass = isMenuOpen ? "show" : "hide";
+
   return (
     <div className="div_one_background">
       <Navbar collapseOnSelect expand="lg" className="navbar_style">
@@ -31,19 +61,19 @@ function NavbarNav() {
               <img src="/Images/LOGO.png" alt="logo" />
             </NavLink>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="">
-              <NavLink to="/home" className="nav_text">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setIsMenuOpen(!isMenuOpen)}/>
+          <Navbar.Collapse id="responsive-navbar-nav"className={navbarCollapseClass} >
+            <Nav className="" >
+              <NavLink to="/home" className="nav_text"   onClick={handleNavLinkClick} >
                 Home
               </NavLink>
-              <NavLink to="/about-us" className="nav_text">
+              <NavLink to="/about-us" className="nav_text" onClick={handleNavLinkClick}>
                 About Us
               </NavLink>
 
               {/* submenu bar services area start */}
 
-              <nav className="menu_bar nav_text">
+              <nav className="menu_bar nav_text" >
                 <ul>
                   <li className="menu_item">
                     <span className="services">
@@ -252,13 +282,13 @@ function NavbarNav() {
 
               {/* submenu bar services area end */}
 
-              <NavLink to="/clients" className="nav_text">
+              <NavLink to="/clients" className="nav_text" >
                 Clients
               </NavLink>
 
               {/* submenu bar Company area start */}
 
-              <nav className="menu_bar nav_text">
+              <nav className="menu_bar nav_text" >
                 <ul>
                   <li className="menu_item">
                     <span className="services">

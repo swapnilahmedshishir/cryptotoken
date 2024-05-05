@@ -1353,7 +1353,33 @@ textarea {
   transition: transform 0.3s ease;
 }
 
-.servicesComponent_text_heading h4:nth-child(1) {
+  .servicesComponent_text_heading {
+    /* font-family: var(--font-main);
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.8rem;
+    padding-left: 0rem;
+    padding-right: 5rem;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-style: italic;
+    letter-spacing: 2px; */
+  }
+
+
+.servicesComponent_text_heading {
+  font-family: var(--font-main);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  padding-left: 0rem;
+  padding-right: 5rem;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+
+/* .servicesComponent_text_heading h4:nth-child(1) {
   background: linear-gradient(88deg, #01B5E8, #7752FE, #732bf7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1423,7 +1449,7 @@ textarea {
   50% {
     border-color: transparent;
   }
-}
+} */
 
 
 
@@ -1651,14 +1677,14 @@ textarea {
   .univarsal_text_div {
     margin: 0rem 9rem;
   }
-  .servicesComponent_text_heading h4:nth-child(1) {
+  /* .servicesComponent_text_heading h4:nth-child(1) {
     font-size: 2.8rem;
     margin: 0 0 0 21%;
 }
   .servicesComponent_text_heading h4:nth-child(2) {    
     font-size: 2.8rem;   
     width: 445px;
-}
+} */
   /* caree */
   .job_title {
     margin-right: 0rem;
@@ -1690,6 +1716,7 @@ textarea {
     padding: 3rem 1rem;
     margin: 0px 1.5rem;
   }
+ 
   /* team */
   .team_col_text_style {
     margin: 0rem 0rem;
@@ -1766,7 +1793,7 @@ textarea {
 
   /* navbar */
   .nav_text {
-    margin: 1rem 0rem;
+    margin: 0.5rem 0rem;
   }
   .hero_text_style h1 {
     font-size: 3rem;
@@ -1852,14 +1879,17 @@ textarea {
     font-size: 23px;
   }
   /* services */
-  .servicesComponent_text_heading h4:nth-child(1) {
+  .servicesComponent_text_heading {
+    padding-right: 0rem;
+  }
+  /* .servicesComponent_text_heading h4:nth-child(1) {
     font-size: 2.6rem;
     margin: 0 0 0 10%;
 }
   .servicesComponent_text_heading h4:nth-child(2) {    
     font-size: 2rem;
     width: 330px;
-}
+} */
  
 }
 @media (max-width: 768px) {
@@ -1874,6 +1904,11 @@ textarea {
     font-size: 2.5rem;
     margin-bottom: 0.6rem;
   }
+/* naver  */
+/* .collapse:not(.show) {
+  display: none;
+} */
+
 
   /* caree */
   .job_section_list {
@@ -2102,7 +2137,7 @@ textarea {
     padding-bottom: 1.5rem;
   }
 
-  .servicesComponent_text_heading h4:nth-child(1) {
+  /* .servicesComponent_text_heading h4:nth-child(1) {
     font-size: 2rem;
     margin: 0 0 0 10%;
     width: 230px;
@@ -2111,6 +2146,11 @@ textarea {
   .servicesComponent_text_heading h4:nth-child(2) {    
     font-size: 2rem;
     width: 300px;
+} */
+.servicesComponent_text_heading {
+  padding-right: 0rem;
+  font-size: 2.2rem;
+  line-height: 2.3rem;
 }
   
   .services_text ul {
