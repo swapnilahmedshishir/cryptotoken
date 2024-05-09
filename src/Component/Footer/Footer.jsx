@@ -12,33 +12,37 @@ const Footer = () => {
             <div className="footer_row_box row align-items-center justify-content-between">
               <div className="col-12 col-md-7 col-lg-5">
                 <div className="footer_box_text_div">
-                  <h2 className="footer_heading">Take Good Design Today</h2>
+                  <h2 className="footer_heading">Grow you business with us</h2>
                   <div className="footer_box_services">
                     <div className="footer_box_services_div">
                       <IoMdCheckmarkCircleOutline className="footer_box_icon" />
-                      <p>web design</p>
+                      <p>marketing</p>
                     </div>
                     <div className="footer_box_services_div">
                       <IoMdCheckmarkCircleOutline className="footer_box_icon" />
-                      <p>ux design</p>
+                      <p>management</p>
                     </div>
                     <div className="footer_box_services_div">
                       <IoMdCheckmarkCircleOutline className="footer_box_icon" />
-                      <p>ui design</p>
+                      <p>design</p>
+                    </div>
+                    <div className="footer_box_services_div">
+                      <IoMdCheckmarkCircleOutline className="footer_box_icon" />
+                      <p>development</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-12 col-md-5 col-lg-7">
                 <div className="footer_box_btn_div">
-                  <Link to="/" className="footer_box_btn">
+                  <Link to="/contact" className="footer_box_btn">
                     <button className="customFooterBoxbtn1 custombtn">
                       Request A Free Call
                     </button>
                   </Link>
-                  <Link to="/" className="">
+                  <Link to="/contact" className="">
                     <button className="customFooterBoxbtn2 custombtn">
-                      Get started
+                   Order Now
                     </button>
                   </Link>
                 </div>
@@ -72,7 +76,7 @@ const Footer = () => {
                             <Link to="">Academy</Link>
                           </li>
                           <li>
-                            <Link to="">Blog</Link>
+                            <Link to="/blog">Blog</Link>
                           </li>
                           <li>
                             <Link to="">Themes</Link>
@@ -81,7 +85,7 @@ const Footer = () => {
                             <Link to="">Hosting</Link>
                           </li>
                           <li>
-                            <Link to="">Developers</Link>
+                            <Link to="/services/development/website-development">Developers</Link>
                           </li>
                         </ul>
                       </div>
@@ -95,19 +99,19 @@ const Footer = () => {
                             <h5>Company</h5>
                           </li>
                           <li>
-                            <Link to="">About Us</Link>
+                            <Link to="/about-us">About Us</Link>
                           </li>
                           <li>
-                            <Link to="">Services</Link>
+                            <Link to="/services/package">Services</Link>
                           </li>
                           <li>
-                            <Link to="">Teams</Link>
+                            <Link to="/team">Teams</Link>
                           </li>
                           <li>
                             <Link to="">FAQs</Link>
                           </li>
                           <li>
-                            <Link to="">Contact Us</Link>
+                            <Link to="/contact">Contact Us</Link>
                           </li>
                         </ul>
                       </div>

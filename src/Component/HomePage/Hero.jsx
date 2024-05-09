@@ -47,10 +47,10 @@ const Hero = () => {
             </div>
 
             <div className="hero_btn_style">
-              <Link to="/" className="hero_btn1">
+              <Link to="/contact" className="hero_btn1">
                 <button className="custombtn">Request A Free Call</button>
               </Link>
-              <Link to="/" className="hero_btn2">
+              <Link to="/services/package" className="hero_btn2">
                 <button className="getStartedBtn">
                   Get started
                   <span className="getStartedBtn_span">

@@ -20,6 +20,7 @@ const ArticalColum = (props) => {
               <h4>{title}</h4>
 
               <p>{Author}</p>
+              {/* <p>{shortDes}</p> */}
               <p>{`${shortDes.slice(0, 150)}` + "...."}</p>
             </div>
           </div>

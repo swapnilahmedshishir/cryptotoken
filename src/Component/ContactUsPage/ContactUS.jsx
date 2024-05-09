@@ -1,12 +1,51 @@
 import HeroText from "../UniversalComponent/HeroText/HeroText";
 import { MdMarkEmailRead, MdCall } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import { useFormik } from "formik";
+import { useState } from "react";
+import axios from "axios";
 
 const ContactUS = () => {
+
+  // state
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [submiteMessage, setSubmiteMessage] = useState("");
+
+  // use fromik method
+  const formik = useFormik({
+    initialValues: {
+      fullName: "",
+      phoneNumber: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+    onSubmit: async (values, { resetForm }) => {
+console.log(values);
+      try {
+        const response = await axios.post(
+          "http://localhost:8005/admin/message/submited",
+          values          
+        );
+        if (response.data.Status) {
+          setErrorMessage(null);   
+          setSubmiteMessage("free consultation requset successfull");
+              
+        }
+      } catch (error) {
+        setErrorMessage(`${error}`);
+        setSubmiteMessage('');
+      }
+
+      resetForm();
+    },
+  });
+
   return (
     <>
-      <div className="univarsal_div">
+      <div className="univarsal_div">      
         <div className="container">
+        
           <HeroText
             heroText={{ text1: "CONTACT", text2: "US", description: "" }}
           />
@@ -50,15 +89,20 @@ const ContactUS = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6">
+              <div className="col-sm-12 col-md-6">                
                 <div className="contactus_input_section">
                   <h3 className="text-center">Book a Free Consultation</h3>
-
-                  <form action="/action_page.php">
+                  {errorMessage && errorMessage ? <p className="error-message">{errorMessage}</p> : <p className="success-message">{submiteMessage}</p> }
+                  <form 
+                   onSubmit={formik.handleSubmit}
+                   encType="multipart/form-data" >
                     <input
                       type="text"
                       id="fullName"
                       name="fullName"
+                      onChange={formik.handleChange}
+                      value={formik.values.fullName}
+                      required
                       placeholder="Full Name *"
                       className="contactus_input_fild"
                     />
@@ -66,6 +110,9 @@ const ContactUS = () => {
                       type="tel"
                       id="phoneNumber"
                       name="phoneNumber"
+                      onChange={formik.handleChange}
+                      value={formik.values.phoneNumber}
+                      required
                       placeholder="Phone Number *"
                       className="contactus_input_fild"
                     />
@@ -73,6 +120,9 @@ const ContactUS = () => {
                       type="email"
                       id="email"
                       name="email"
+                      onChange={formik.handleChange}
+                      value={formik.values.email}
+                      required
                       placeholder="Work Email *"
                       className="contactus_input_fild"
                     />
@@ -80,10 +130,17 @@ const ContactUS = () => {
                       type="text"
                       id="emailSubject"
                       name="subject"
+                      onChange={formik.handleChange}
+                      value={formik.values.subject}
+                      required
                       placeholder="Subject"
                       className="contactus_input_fild"
                     />
-                    <textarea>Message</textarea>
+                    <textarea
+                    name='message'
+                    onChange={formik.handleChange}
+                    value={formik.values.message}
+                    required >Message</textarea>
 
                     <input type="submit" value="Submit" />
                   </form>

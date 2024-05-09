@@ -273,7 +273,7 @@ function NavbarNav() {
                     <div className="dropdown_menu comapny_dropdown_menu">
                       <ul className="submenu">
                         <li>
-                          <NavLink to="/listing" className="dropdown-item">
+                          <NavLink to="/about-us" className="dropdown-item">
                             About
                           </NavLink>
                         </li>
