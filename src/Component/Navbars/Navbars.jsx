@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import Typed from "typed.js";
-import { useEffect} from "react";
+import { useEffect, useState} from "react";
 
 function NavbarNav() {
 
@@ -25,6 +25,11 @@ function NavbarNav() {
   }, []);
   
 
+  const [collapsed, setCollapsed] = useState(false);
+  const toggleCollapsed = () => {
+    setCollapsed(!collapsed);
+  };
+
 
   
   
@@ -38,9 +43,10 @@ function NavbarNav() {
             </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Collapse id="responsive-navbar-nav" collapsed={collapsed}
+          collapsible>
             <Nav className="" >
-              <NavLink to="/home" className="nav_text" >
+              <NavLink to="/home" className="nav_text collapsed"  onClick={toggleCollapsed}>
                 Home
               </NavLink>
               <NavLink to="/about-us" className="nav_text">
