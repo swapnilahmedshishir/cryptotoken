@@ -1,98 +1,59 @@
-import HeroText from "../UniversalComponent/HeroText/HeroText";
-import ArticalColum from "./ArticalColum";
-import Pagination from "./Pagination";
+import { useState } from 'react';
+import HeroText from '../UniversalComponent/HeroText/HeroText';
+import ArticalColum from './ArticalColum';
+import Pagination from './Pagination';
+import FakData from '../../FackData/data.json';
 
 const BlogPage = () => {
+  const fackData = FakData;
+  const [results] = useState(fackData.totalResults);
+  const [artical] = useState(fackData.articles);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+
+  const totalPages = Math.ceil(results / itemsPerPage);
+  console.log(totalPages);
+
   const handlePageChange = (pageNumber) => {
-    console.log(pageNumber);
-    // Logic to update the displayed articles based on the page number
-    // For example, you might fetch the articles for the selected page
+    setCurrentPage(pageNumber);
   };
+
+  // Calculate the start and end index of articles for the current page
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = Math.min(startIndex + itemsPerPage, artical.length);
+
+  // Get the articles for the current page
+  const currentArticals = artical.slice(startIndex, endIndex);
 
   return (
     <>
       <div className="univarsal_div">
         <div className="container">
-          <HeroText
-            heroText={{ text1: "OUR", text2: "BLOG", description: "" }}
-          />
+          <HeroText heroText={{ text1: 'OUR', text2: 'BLOG', description: '' }} />
 
           {/* blog text*/}
 
           <div className="row">
-            <ArticalColum
-              articalInfo={{
-                imgName: "Tojo images-16.png",
-                title:
-                  "TOJO Global: Your One-Stop Shop for Digital Transformation",
-                shortDes:
-                  "In today's digital age, navigating the ever-changing landscape can be overwhelming. TOJO Global simplifies your journey by offering a comprehensive suite of services under one roof. From Management and Marketing to Development, Design, and Listing, we empower businesses of all sizes to thrive online. Discover how TOJO Global can be your trusted partner in achieving digital success.",
-                Author: "By Author 12/12/2024",
-              }}
-            />
-
-            <ArticalColum
-              articalInfo={{
-                imgName: "Tojo images-10.png",
-                title:
-                  "Unlocking Growth: Data-Driven Strategies for Your Business",
-                shortDes:
-                  " Data is the fuel that propels successful digital strategies. At TOJO Global, we don't just create marketing campaigns or design websites – we leverage data insights to craft targeted solutions that deliver measurable results. Learn how our data-driven approach can help you unlock growth and achieve your business goals. (This blog post can showcase a specific client success story or highlight a particular service that utilizes data analysis.",
-                Author: "By Author 12/12/2024",
-              }}
-            />
-
-            <ArticalColum
-              articalInfo={{
-                imgName: "Tojo images-12.png",
-                title:
-                  "The Future of Work: Embracing Technology for a Competitive Edge",
-                shortDes:
-                  "The digital landscape is constantly evolving, and businesses need to adapt to stay ahead of the curve. In this blog post, TOJO Global explores the latest technological trends and how they are impacting the way we work. Discover how our team of experts can help you integrate emerging technologies into your business and gain a competitive edge. (This blog post positions TOJO Global as a thought leader and highlights their expertise in staying current with digital advancements.",
-                Author: "By Author 12/12/2024",
-              }}
-            />
-
-            <ArticalColum
-              articalInfo={{
-                imgName: "Tojo images-13.png",
-                title:
-                  "TOJO Global: Your One-Stop Shop for Digital Transformation",
-                shortDes:
-                  "In today's digital age, navigating the ever-changing landscape can be overwhelming. TOJO Global simplifies your journey by offering a comprehensive suite of services under one roof. From Management and Marketing to Development, Design, and Listing, we empower businesses of all sizes to thrive online. Discover how TOJO Global can be your trusted partner in achieving digital success.",
-                Author: "By Author 12/12/2024",
-              }}
-            />
-
-            <ArticalColum
-              articalInfo={{
-                imgName: "Tojo images-15.png",
-                title:
-                  "Unlocking Growth: Data-Driven Strategies for Your Business",
-                shortDes:
-                  " Data is the fuel that propels successful digital strategies. At TOJO Global, we don't just create marketing campaigns or design websites – we leverage data insights to craft targeted solutions that deliver measurable results. Learn how our data-driven approach can help you unlock growth and achieve your business goals. (This blog post can showcase a specific client success story or highlight a particular service that utilizes data analysis.",
-                Author: "By Author 12/12/2024",
-              }}
-            />
-
-            <ArticalColum
-              articalInfo={{
-                imgName: "Tojo images-18.png",
-                title:
-                  "The Future of Work: Embracing Technology for a Competitive Edge",
-                shortDes:
-                  "The digital landscape is constantly evolving, and businesses need to adapt to stay ahead of the curve. In this blog post, TOJO Global explores the latest technological trends and how they are impacting the way we work. Discover how our team of experts can help you integrate emerging technologies into your business and gain a competitive edge. (This blog post positions TOJO Global as a thought leader and highlights their expertise in staying current with digital advancements.",
-                Author: "By Author 12/12/2024",
-              }}
-            />
+            {currentArticals.map((d, i) => (
+              <ArticalColum
+                key={i}
+                articalInfo={{
+                  imgName: d.urlToImage,
+                  title: d.title,
+                  shortDes: d.description,
+                  Author: d.author,
+                }}
+              />
+            ))}
           </div>
           <Pagination
             /* Total number of items */
-            totalItems={30}
+            totalItems={results}
             /* Number of items per page */
-            itemsPerPage={6}
+            itemsPerPage={itemsPerPage}
             /* Function to handle page change */
             onPageChange={handlePageChange}
+            currentPage={currentPage}
           />
         </div>
       </div>
@@ -101,3 +62,73 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import HeroText from "../UniversalComponent/HeroText/HeroText";
+// import ArticalColum from "./ArticalColum";
+// import Pagination from "./Pagination";
+// import { useState } from "react";
+// const BlogPage = () => {
+//   const handlePageChange = (pageNumber) => {
+//     console.log(pageNumber == artical);
+//     // Logic to update the displayed articles based on the page number
+//     // For example, you might fetch the articles for the selected page
+//   };
+
+//   return (
+//     <>
+//       <div className="univarsal_div">
+//         <div className="container">
+//           <HeroText
+//             heroText={{ text1: "OUR", text2: "BLOG", description: "" }}
+//           />
+
+//           {/* blog text*/}
+
+//           <div className="row">
+//             {
+//               artical &&  artical.map((d,i) =>(
+//                 <ArticalColum key={i}
+//                 articalInfo={{
+//                   imgName: d.urlToImage,
+//                   title:d.title,
+//                   shortDes:d.description,
+//                   Author: d.author,
+//                 }}
+//               />
+//               ))}
+//           </div>
+//           <Pagination
+//             /* Total number of items */
+//             totalItems={results}
+//             /* Number of items per page */
+//             itemsPerPage={6}
+//             /* Function to handle page change */
+//             onPageChange={handlePageChange}
+//           />
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default BlogPage;

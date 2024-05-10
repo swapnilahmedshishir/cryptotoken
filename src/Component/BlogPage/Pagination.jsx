@@ -19,7 +19,7 @@ const Pagination = ({ totalItems, itemsPerPage, onPageChange }) => {
         <button
           key={i}
           onClick={() => handlePageChange(i)}
-          disabled={i === currentPage}
+          disabled={i === currentPage}          
         >
           {i}
         </button>

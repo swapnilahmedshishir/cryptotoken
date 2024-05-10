@@ -1,7 +1,7 @@
 /* universal style */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-* {  
+* {
   font-family: "DM Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -485,7 +485,8 @@
 }
 
 .services_col_text_style {
-  background: #7853ff59;
+  /* background: #7853ff59; */
+  background: #060044;
   text-align: center;
   padding: 3rem 1.5rem;
   margin: 0px 2rem;
@@ -1273,15 +1274,15 @@ textarea {
   height: 100%;
   border: 2px solid #fff;
   border-radius: 1.5rem 0rem;
-  z-index: 1;
+  position: relative;
+  z-index: 10;
 }
 
 .blog_div_text_style {
   background: var(--text-color);
   font-family: var(--font-main);
   flex: 1;
-  padding: 0.9rem 0.9rem;
-  border-bottom-right-radius: 1.39rem;
+  padding: 0.9rem 0.9rem;  
   transition: 0.5s ease;
 }
 .blog_div_text_style h4 {
@@ -1298,17 +1299,21 @@ textarea {
   text-align: justify;
   color: #101010;
 }
+.blog_col_image_style {
+  border-top-left-radius: 1.5rem;
+  overflow: hidden; /*Set the wrappers overflow to hidden*/
+  text-align: center;
+}
 
-.blog_col_div_style img {
+.blog_col_image_style img {
   width: 100%;
-  border-bottom-right-radius: 4rem;
-  z-index: 1;
+  height: 16rem;    
   transition: 0.5s ease;
 }
 
 .blog_col_div_style:hover img {
-  transform: scale(1.04);  
-  transition: 0.5s ease;
+  transform: scale(1.08);  
+  transition: 0.5s ease; 
 }
 .pagination {
   padding-top: 2rem;
@@ -1317,6 +1322,51 @@ textarea {
   margin: 0rem 1rem;
   padding: 0.2rem 0.5rem;
   color: #171450;
+}
+
+.blog_button_div{
+  background-color:var(--text-color);
+  border-bottom-right-radius: 1.39rem;
+}
+
+.readMoreBtn {
+  background: none;
+  outline: none;
+  padding: 0.5rem 1.4rem;
+  border-radius: 0.4rem;
+  color: var(--bg-color);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: all 0.5s linear;
+}
+.readMoreBtn_span {
+  font-size: 1rem;
+  margin-left: 0.7rem;
+  background: linear-gradient(
+    175deg,
+    #34c9f7 14.89%,
+    rgba(193, 21, 245, 0.79) 85.85%
+  );
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+}
+.blog_col_div_style:hover .readMoreBtn {
+  margin-left: 1rem;
+  transition: all 0.5s linear;
+}
+.blog_col_div_style:hover .readMoreBtn_span {
+  transition: all 0.5s linear;
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
+}
+.blog_col_div_style:hover .readMoreBtn_span .ion-icon {
+  transition: all 0.5s linear;
+  transform: scale(1);
+  color: var(--main-color);
 }
 /* ========================================================================= */
 /* services componet Section */
@@ -1346,8 +1396,8 @@ textarea {
   transition: transform 0.3s ease;
 }
 
-  .servicesComponent_text_heading {
-    /* font-family: var(--font-main);
+.servicesComponent_text_heading {
+  /* font-family: var(--font-main);
     font-size: 3rem;
     font-weight: 500;
     line-height: 3.8rem;
@@ -1357,8 +1407,7 @@ textarea {
     color: var(--text-color);
     font-style: italic;
     letter-spacing: 2px; */
-  }
-
+}
 
 .servicesComponent_text_heading {
   font-family: var(--font-main);
@@ -1370,7 +1419,6 @@ textarea {
   text-transform: capitalize;
   color: var(--text-color);
 }
-
 
 /* .servicesComponent_text_heading h4:nth-child(1) {
   background: linear-gradient(88deg, #01B5E8, #7752FE, #732bf7);
@@ -1443,8 +1491,6 @@ textarea {
     border-color: transparent;
   }
 } */
-
-
 
 .servicesComponent_text_para {
   text-align: left;
@@ -1709,7 +1755,7 @@ textarea {
     padding: 3rem 1rem;
     margin: 0px 1.5rem;
   }
- 
+
   /* team */
   .team_col_text_style {
     margin: 0rem 0rem;
@@ -1787,6 +1833,10 @@ textarea {
   /* navbar */
   .nav_text {
     margin: 0.5rem 0rem;
+  }
+
+  .collapse .hide {
+    display: block;
   }
   .hero_text_style h1 {
     font-size: 3rem;
@@ -1883,7 +1933,6 @@ textarea {
     font-size: 2rem;
     width: 330px;
 } */
- 
 }
 @media (max-width: 768px) {
   /* ...
@@ -1897,14 +1946,14 @@ textarea {
     font-size: 2.5rem;
     margin-bottom: 0.6rem;
   }
-/* naver  */
-.div_one_background {
-  position: static;  
-}
+  /* naver  */
+  .div_one_background {
+    position: static;
+  }
 
-.hero_div { 
-  margin-top: 0rem;
-}
+  .hero_div {
+    margin-top: 0rem;
+  }
   /* caree */
   .job_section_list {
     text-align: center;
@@ -2005,12 +2054,12 @@ textarea {
   .about_div {
     padding: 1rem 0rem;
   }
-  
+
   .col_image_style img {
     height: 10rem;
     width: 100%;
     margin-top: 1rem;
-}
+  }
 
   /* services  */
   .services_col_style {
@@ -2054,8 +2103,12 @@ textarea {
     padding-left: 0rem;
   }
   .footer_box_services_div {
-    padding-right: 0.5rem;
+    padding-right: 0.2rem;
     font-size: 0.8rem;
+  }
+  .footer_box_services_div .footer_box_icon {
+    margin-top: 0.15rem;
+    margin-right: 0.1rem;
   }
   .footer_row_box {
     text-align: center;
@@ -2145,12 +2198,12 @@ textarea {
     font-size: 2rem;
     width: 300px;
 } */
-.servicesComponent_text_heading {
-  padding-right: 0rem;
-  font-size: 2.2rem;
-  line-height: 2.3rem;
-}
-  
+  .servicesComponent_text_heading {
+    padding-right: 0rem;
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+  }
+
   .services_text ul {
     margin-left: 1.5rem;
   }

@@ -16,8 +16,8 @@ const HomePage = () => {
       <KeyFeatures />
       {/* Our service section   */}
       <Services />
-      {/* Meet the team section    */}
-      <TeamMeet />
+      {/* Meet the team section <TeamMeet />    */}
+      
       {/* faq  */}
       <Faq />
       {/* faq  */}
