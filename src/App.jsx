@@ -29,6 +29,7 @@ import UxUi from "./Component/Services/Design/Uxui";
 import SeoMarketing from "./Component/Services/Marketing/SEO";
 import Package from "./Component/Services/Package/Package";
 import Listing from "./Component/Services/Listing/Listing";
+import Artical from "./Component/BlogPage/Artical/Artical";
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
         <Route path="/career" element={<CareerPage />} />
         <Route path="/contact" element={<ContactUS />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/:title" element={<Artical />} />
         {/* sevices Route */}
         <Route
           path="/services/mangement/community-management"
