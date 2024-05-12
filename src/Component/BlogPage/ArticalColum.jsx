@@ -9,30 +9,24 @@ const ArticalColum = (props) => {
   return (
     <>
       <div className="col-sm-12 col-md-6 col-lg-4 blog_col_section">
-        <Link
-          to={title ? `/${title.replaceAll(/ /g, "-")}` : "/fallback-url"}
-        >
+        <Link to={title ? `/${title.replaceAll(/ /g, "-")}` : "/fallback-url"}>
           <div className="blog_col_div_style">
-           <div className="blog_col_image_style">
-           <img
-              src={imgName}              
-              alt="blog1imge"
-              className="blog_img_style"
-            />
-           </div>
+            <div className="blog_col_image_style">
+              <img src={imgName} alt="blog1imge" className="blog_img_style" />
+            </div>
             <div className="blog_div_text_style">
-            <p className="artical_author">{Author}</p>
-              <h4>{title}</h4>              
+              <p className="artical_author">{Author}</p>
+              <h4>{title}</h4>
               {/* <p>{shortDes}</p> */}
-              <p>{`${shortDes.slice(0, 100)}` + "...."}</p>   
+              <p>{`${shortDes.slice(0, 100)}` + "...."}</p>
               <button className="readMoreBtn">
                 Read more
-                  <span className="readMoreBtn_span">
-                    <FaArrowRight className="ion-icon" />
-                  </span>
-                </button>             
-             </div>         
-             {/* <div className="blog_button_div">
+                <span className="readMoreBtn_span">
+                  <FaArrowRight className="ion-icon" />
+                </span>
+              </button>
+            </div>
+            {/* <div className="blog_button_div">
              <button className="readMoreBtn">
                 Read more
                   <span className="readMoreBtn_span">

@@ -287,7 +287,7 @@
   margin-top: -2rem;
 }
 .hero_row_style {
-  padding-bottom: 3.22875rem;
+  padding-bottom: 0.5rem;
   padding-top: 4.5rem;
   display: flex;
   align-items: center;
@@ -631,8 +631,6 @@
 
 /* ========================================================================= */
 /* career section start  */
-.job {
-}
 .career_para_text {
   padding: 0.2rem 0rem !important;
 }
@@ -1117,7 +1115,8 @@
 }
 .client_item img {
   opacity: 0.8;
-  max-width: 100%;
+  width: 15rem;
+  height: auto;
 }
 .client_item img:hover {
   opacity: 1;
@@ -1453,19 +1452,6 @@ textarea {
 }
 
 .servicesComponent_text_heading {
-  /* font-family: var(--font-main);
-    font-size: 3rem;
-    font-weight: 500;
-    line-height: 3.8rem;
-    padding-left: 0rem;
-    padding-right: 5rem;
-    text-transform: capitalize;
-    color: var(--text-color);
-    font-style: italic;
-    letter-spacing: 2px; */
-}
-
-.servicesComponent_text_heading {
   font-family: var(--font-main);
   font-size: 3rem;
   font-weight: 600;
@@ -1553,6 +1539,35 @@ textarea {
 }
 /* ===============================================================*/
 /* package management system */
+
+.ManagementPackage_col_text_style {
+  margin: 0rem 7rem 3rem 7rem !important;
+}
+.ManagementPackage_text_div_style {
+  text-align: left;
+  padding: 0rem 3rem;
+  margin-bottom: 1rem;
+}
+.ManagementPackage_text_div_style ul li {
+  border-bottom: 2px solid #ffffff59;
+  line-height: 2rem;
+  font-weight: 500;
+}
+.management_section_border {
+  width: 150px;
+  margin: 0 auto;
+  border: 1px solid #ffffff59;
+}
+.management_section_service {
+  background-image: linear-gradient(90deg, #01b5e8 0%, #7752fe 100%);
+  -webkit-background-clip: text; /* Safari/Chrome only */
+  color: transparent;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+/* packages */
 .package_col_style {
   transition: 0.5s ease;
   margin-top: 2.5rem;
@@ -1641,7 +1656,6 @@ textarea {
   background-image: linear-gradient(90deg, #01b5e8 0%, #7752fe 100%);
   -webkit-background-clip: text;
   color: transparent;
-  text-fill-color: transparent;
   transition: 0.5s ease;
 }
 
@@ -1737,7 +1751,6 @@ textarea {
   background-image: linear-gradient(90deg, #01b5e8 0%, #7752fe 100%);
   -webkit-background-clip: text; /* Safari/Chrome only */
   color: transparent;
-  text-fill-color: transparent;
 }
 
 .section_btn2 .btn {
@@ -1759,6 +1772,17 @@ textarea {
 }
 .plan_text_div3 {
   background: #7752fe;
+}
+/* ========================================================================= */
+/* service listing  section  */
+.listing_heading {
+  padding: 0rem 5rem;
+}
+.listing_section_border {
+  border: 2px solid #ffffff59;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  width: 20rem;
 }
 /* ========================================================================= */
 /* media query  */
@@ -1817,6 +1841,15 @@ textarea {
     margin: 0rem 0rem;
     padding: 1.7rem 1.7rem;
   }
+  /* blog Page */
+  .artical_img img {
+    width: 55rem;
+    height: 28rem;
+  }
+  .artical_text_div {
+    padding: 2.5rem 4rem;
+  }
+
   /* faq */
   .faq_row_style img {
     height: 25rem;
@@ -1843,6 +1876,12 @@ textarea {
   .Our_Value_image_style {
     padding-top: 25rem;
   }
+  /* clinet image  */
+  .client_item img {
+    opacity: 0.8;
+    width: 11rem;
+    height: auto;
+  }
   /* contact us page  */
   .contactus_text_div {
     padding-left: 0.9rem;
@@ -1857,7 +1896,9 @@ textarea {
     margin-right: 0rem;
   }
   /* package section */
-
+  .ManagementPackage_col_text_style {
+    margin: 0rem !important;
+  }
   .package_col_text_style {
     padding: 2.5rem 0.5rem;
     margin: 0px 0.3rem;
@@ -1867,6 +1908,7 @@ textarea {
   /* ...
 	// rules here apply to devices from 769px to 992px (inclusive)
 	... */
+
   /* univarsal div */
   .univarsal_text_div {
     margin: 0rem 5rem;
@@ -1977,6 +2019,14 @@ textarea {
   .contactus_input_section h3 {
     font-size: 23px;
   }
+  /* blog Page */
+  .artical_img img {
+    width: 42rem;
+    height: 28rem;
+  }
+  .artical_text_div {
+    padding: 2.5rem 4rem;
+  }
   /* services */
   .servicesComponent_text_heading {
     padding-right: 0rem;
@@ -1994,6 +2044,7 @@ textarea {
   /* ...
 	// rules here apply to devices from 0px to 768px (inclusive)
 	... */
+
   /* univasal text */
   .univarsal_text_div {
     margin: 0rem 0rem;
@@ -2237,6 +2288,37 @@ textarea {
   }
   .contactus_text_div {
     padding-top: 0rem;
+  }
+  /* clinet image  */
+  .client_item img {
+    opacity: 0.8;
+    width: 100%;
+  }
+  .listing_heading {
+    padding: 0rem;
+  }
+  .listing_section_border {
+    width: 16rem;
+  }
+
+  /* blog Page */
+  .artical_img img {
+    height: 19rem;
+  }
+  .artical_text_div {
+    padding: 2.5rem 1rem;
+  }
+  .artical_text_info {
+    padding-bottom: 0rem;
+  }
+  .artical_text_info ul {
+    display: inline-block;
+  }
+  .artical_text_info ul li {
+    margin-bottom: 1rem;
+  }
+  .infoIcon {
+    margin-top: -0.2rem;
   }
   /* services */
   .servicesComponent_section_image {

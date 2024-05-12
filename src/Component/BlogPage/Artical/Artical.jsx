@@ -3,7 +3,7 @@ import ArticalColum from "../ArticalColum";
 import { RxAvatar } from "react-icons/rx";
 import { MdDateRange } from "react-icons/md";
 import { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import FakData from "../../../FackData/data.json";
 
 const Artical = () => {
@@ -52,7 +52,7 @@ const Artical = () => {
       <div className="univarsal_div">
         <div className="container">
           <div className="artical_img">
-            <img src={image} alt="" />
+            <img className="img-fluid" src={image} alt={image} />
           </div>
           <div className="artical_text_div">
             <div className="artical_text_info">
@@ -89,6 +89,7 @@ const Artical = () => {
               ut cumque amet?
             </p>{" "}
             <img
+              className="img-fluid"
               src="https://media.npr.org/assets/img/2023/12/05/laine.ap_wide-37984ee9f92e03b4808261c714af31a312350ebb-s1400-c100.jpg"
               alt=""
             />

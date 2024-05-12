@@ -15,8 +15,92 @@ const Package = () => {
             }}
           />
 
-          {/* package plan text */}
+          {/* package plan Management */}
           <div>
+            <HeroText
+              heroText={{
+                text1: "",
+                text2: "Management",
+                description: "",
+              }}
+            />
+            <div className="row justify-content-md-center">
+              <div className="col-sm-12 col-md-6 package_col_style">
+                <div className="package_col_div_style">
+                  <div className="package_col_text_style ManagementPackage_col_text_style">
+                    <p className="plan_text_div plan_text_div3">
+                      Telegram + Discord
+                    </p>
+                    <h2 className="section_hour">24/7</h2>
+                    <p className="section_txt"> Management</p>
+                    <div className="management_section_border"></div>
+                    <p className="management_section_service">
+                      Telegram and Discordr
+                    </p>
+                    <div className="ManagementPackage_text_div_style">
+                      <ul className="">
+                        <li>Group Management</li>
+                        <li>Update Posting</li>
+                        <li>Content Creation</li>
+                        <li>Graphics Making</li>
+                        <li>24/7 Nonstop Manage Community</li>
+                      </ul>
+                    </div>
+                    <div className="section_btn">
+                      <Link
+                        to=""
+                        className="btn fill-btn_gradient fill-btn_gradient-pink"
+                      >
+                        <span>Choose Plan</span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-sm-12 col-md-6 package_col_style">
+                <div className="package_col_div_style">
+                  <div className="package_col_text_style ManagementPackage_col_text_style">
+                    <p className="plan_text_div plan_text_div2">
+                      Social Media Management
+                    </p>
+                    <h2 className="section_hour">24/7</h2>
+                    <p className="section_txt"> Social Media Management</p>
+                    <div className="management_section_border"></div>
+                    <p className="management_section_service">
+                      Facebook, Instagram, TikTok, Twitter, Telegram
+                    </p>
+                    <div className="ManagementPackage_text_div_style">
+                      <ul className="">
+                        <li>Create Post</li>
+                        <li>Create Content</li>
+                        <li>Create Graphics</li>
+                        <li>24/7 Nonstop Manage Community</li>
+                      </ul>
+                    </div>
+                    <div className="section_btn">
+                      <Link
+                        to=""
+                        className="btn fill-btn_gradient fill-btn_gradient-pink"
+                      >
+                        <span>Choose Plan</span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* package plan Marketing */}
+          <div>
+            <HeroText
+              heroText={{
+                text1: "",
+                text2: "Marketing",
+                description: "",
+              }}
+            />
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-4 package_col_style">
                 <div className="package_col_div_style">
